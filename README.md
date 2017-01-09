@@ -1,2 +1,2 @@
-# AudioPlayer
-An audio player component based on Vue.js 2.0
+# UI && Components
+UI && Component framework based on Vue.js 2.0
