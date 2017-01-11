@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei'
+}
+
+@mixin text-Color($color) {
+    color: $color
+}
+
+$primay: #007ACC;
+$info: #00b4aa;
+$danger: #f44336;
+
+/*
+** 链接部分
+*/
+a{
+    cursor: pointer; // 默认手势
+    &.primary {
+        color: #007ACC;
+    }
+    &.no-decoration {
+        text-decoration: none;  // 无下划线
+    }
+}
+
+
+/*
+** 文本部分
+*/
+p {
+    &.clear-margin {
+        margin: 0;
+    }
+}
+.text {
+    &.white{
+        @include text-Color(#fff)
+    }
+    &.gray {
+        @include text-Color(gray)
+    }
+    &.small {
+        font-size: 12px;
+    }
+    &.big {
+        font-size: 16px;
+    }
+}
+
+/*
+** 按钮部分
+*/
+.button {
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    &.small {
+        font-size: 12px;
+        padding: 2px 12px;
+    }
+    &.big {
+        padding: 8px 45px;
+    }
+    &.primary {
+        color: #fff;
+        background: $primay;
+        &:hover {
+            background: #0771B9;
+        }
+    }
+    &.danger {
+        color: #fff;
+        background: $danger;
+        &:hover {
+            background: #f53c2e;
+        }
+    }
+    &.info {
+        color: #fff;
+        background: $info;
+        &:hover {
+            background: #04ada3;
+        }
+    }
+    &.shadow {
+       box-shadow: 0px 2px 3px #999;
+       &:hover {
+           box-shadow: 0px 2px 4px #777;
+       }
+    }
+}
+
+
+/*
+** 表格
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    &.primary {
+        thead{
+            border: 1px solid #007ACC;
+        }
+    }
+    th,td {
+        border-collapse: collapse;
+    }
+    thead {
+        line-height: 30px;
+        color: #fff;
+        background: $primay;
+        th {
+            border: none;
+        }
+    }
+    tbody {
+        tr {
+            line-height: 32px;
+            background: #f7f7f7;
+            td {
+                font-size: 12px;
+                border: 1px solid #ddd;
+            }
+            &.center {
+                td {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/*
+** 通用部分
+*/ 
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right
+}
+
+// 清除浮动
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+// 过长显示省略号
+.text-ellipsis {
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
