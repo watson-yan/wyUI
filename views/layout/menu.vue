@@ -1,9 +1,9 @@
 <template>
-    <div class="app-left-menu">
-        <h4 class="toggle-menu detail" v-if="mode=='detail'">
+    <div class="side-menu">
+        <h4 class="menu-title detail" v-if="mode=='detail'">
             网站导航 <a @click="mode='brief'" class="fa fa-outdent" aria-hidden="true"></i>
         </h4>
-        <h4 class="toggle-menu brief" v-if="mode=='brief'">
+        <h4 class="menu-title brief" v-if="mode=='brief'">
             &nbsp;<a @click="mode='detail'" class="fa fa-indent" aria-hidden="true"></i>
         </h4>
         <ul v-if="mode=='detail'" class="detail">
@@ -53,42 +53,63 @@
     </div>
 </template>
 <style lang="sass">
-    .app-left-menu {
+    @import '../../static/css/common.scss';
+
+    .side-menu {
         display: inline-block;
         height: 100%;
         background: #f8f8f8;
         border-right: 1px solid #e1e2e2;
         transition: all ease .2s;
 
-        .toggle-menu{
+        .menu-title{
             margin: 0;
             line-height: 40px;
             background: #f2f3f4;
             border-bottom: 1px solid #e1e2e2;
             a {
                 float: right;
-                margin-right: 15px;
                 line-height: 40px;
             }
-
             &.brief {
                 padding-left: 0px;
+                a{
+                    margin-right: 13px;
+                }
             }
             &.detail {
-                padding-left: 46px;
+                padding-left: 18px;
+                a{
+                    margin-right: 8px;
+                }
             }
         }
         
         ul {
             margin: 0px;
+            padding-left: 0px;
             list-style: none;
+            li {
+                line-height: 40px;
+                a{
+                    display: block;
+                    color: #888888;
+                    font-size: 12px;
+                    &:hover {
+                        color: #007ACC;
+                    }
+                }
+                &:hover {
+                    background: #f3f4f4;
+                }
+            }
             &.brief {
                 width: 40px;
-                padding: 5px 5px 5px 5px;
-                li {
+                &>li {
                     position: relative;
-                    a {
-                        padding-left: 14px;
+                    &>a {
+                        text-align: center;
+                        font-size: 14px;
                     }
                     &>div {
                         display: none;
@@ -97,19 +118,25 @@
                         top: 0;
                         .children-box {
                             padding-left: 0px;
-                            margin-left: 5px;
-                            width: 100px;
+                            width: 130px;
                             background: #fff;
-                            border-top: 1px solid #ddd;
-                            border-bottom: 1px solid #ddd;
+                            border-top: $border;
+                            border-bottom: $border;
                             li {
-                                border-left: 1px solid #ddd;
-                                border-right: 1px solid #ddd;
+                                padding: 0px 10px;
+                                border-left: $border;
+                                border-right: $border;
                                 line-height: 30px;
+                            }
+                            li:first-child {
+                                line-height: 40px;
                             }
                         }
                     }
                     &:hover {
+                        margin: -1px 0px;
+                        border-top: $border;
+                        border-bottom: $border;
                         &>div {
                             display: inline;
                         }
@@ -117,24 +144,18 @@
                 }
             }
             &.detail {
-                width: 140px;
-                padding: 5px 10px 5px 5px;
-                ul {
-                    padding-left: 24px;
-                    li {
-                        line-height: 30px;
+                width: 110px;
+                &>li {
+                    &>a {
+                        padding: 0px 10px;
                     }
-                }
-            }
-            li {
-                line-height: 40px;
-                a{
-                    display: block;
-                    padding-left: 20px;
-                    color: #888888;
-                    &:hover {
-                        color: #007ACC;
-                        background: #f3f4f4;
+                    &>div {
+                        ul {
+                            padding-left: 24px;
+                            li {
+                                line-height: 30px;
+                            }
+                        }
                     }
                 }
             }

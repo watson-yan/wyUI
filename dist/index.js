@@ -10441,7 +10441,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.app-left-menu {\n  display: inline-block;\n  height: 100%;\n  background: #f8f8f8;\n  border-right: 1px solid #e1e2e2;\n  transition: all ease .2s;\n}\n.app-left-menu .toggle-menu {\n    margin: 0;\n    line-height: 40px;\n    background: #f2f3f4;\n    border-bottom: 1px solid #e1e2e2;\n}\n.app-left-menu .toggle-menu a {\n      float: right;\n      margin-right: 15px;\n      line-height: 40px;\n}\n.app-left-menu .toggle-menu.brief {\n      padding-left: 0px;\n}\n.app-left-menu .toggle-menu.detail {\n      padding-left: 46px;\n}\n.app-left-menu ul {\n    margin: 0px;\n    list-style: none;\n}\n.app-left-menu ul.brief {\n      width: 40px;\n      padding: 5px 5px 5px 5px;\n}\n.app-left-menu ul.brief li {\n        position: relative;\n}\n.app-left-menu ul.brief li a {\n          padding-left: 14px;\n}\n.app-left-menu ul.brief li > div {\n          display: none;\n          position: absolute;\n          left: 40px;\n          top: 0;\n}\n.app-left-menu ul.brief li > div .children-box {\n            padding-left: 0px;\n            margin-left: 5px;\n            width: 100px;\n            background: #fff;\n            border-top: 1px solid #ddd;\n            border-bottom: 1px solid #ddd;\n}\n.app-left-menu ul.brief li > div .children-box li {\n              border-left: 1px solid #ddd;\n              border-right: 1px solid #ddd;\n              line-height: 30px;\n}\n.app-left-menu ul.brief li:hover > div {\n          display: inline;\n}\n.app-left-menu ul.detail {\n      width: 140px;\n      padding: 5px 10px 5px 5px;\n}\n.app-left-menu ul.detail ul {\n        padding-left: 24px;\n}\n.app-left-menu ul.detail ul li {\n          line-height: 30px;\n}\n.app-left-menu ul li {\n      line-height: 40px;\n}\n.app-left-menu ul li a {\n        display: block;\n        padding-left: 20px;\n        color: #888888;\n}\n.app-left-menu ul li a:hover {\n          color: #007ACC;\n          background: #f3f4f4;\n}\n", ""]);
+	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 5px 20px;\n  border: none;\n  cursor: pointer;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 8px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.side-menu {\n  display: inline-block;\n  height: 100%;\n  background: #f8f8f8;\n  border-right: 1px solid #e1e2e2;\n  transition: all ease .2s;\n}\n.side-menu .menu-title {\n    margin: 0;\n    line-height: 40px;\n    background: #f2f3f4;\n    border-bottom: 1px solid #e1e2e2;\n}\n.side-menu .menu-title a {\n      float: right;\n      line-height: 40px;\n}\n.side-menu .menu-title.brief {\n      padding-left: 0px;\n}\n.side-menu .menu-title.brief a {\n        margin-right: 13px;\n}\n.side-menu .menu-title.detail {\n      padding-left: 18px;\n}\n.side-menu .menu-title.detail a {\n        margin-right: 8px;\n}\n.side-menu ul {\n    margin: 0px;\n    padding-left: 0px;\n    list-style: none;\n}\n.side-menu ul li {\n      line-height: 40px;\n}\n.side-menu ul li a {\n        display: block;\n        color: #888888;\n        font-size: 12px;\n}\n.side-menu ul li a:hover {\n          color: #007ACC;\n}\n.side-menu ul li:hover {\n        background: #f3f4f4;\n}\n.side-menu ul.brief {\n      width: 40px;\n}\n.side-menu ul.brief > li {\n        position: relative;\n}\n.side-menu ul.brief > li > a {\n          text-align: center;\n          font-size: 14px;\n}\n.side-menu ul.brief > li > div {\n          display: none;\n          position: absolute;\n          left: 40px;\n          top: 0;\n}\n.side-menu ul.brief > li > div .children-box {\n            padding-left: 0px;\n            width: 130px;\n            background: #fff;\n            border-top: 1px solid #ddd;\n            border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li > div .children-box li {\n              padding: 0px 10px;\n              border-left: 1px solid #ddd;\n              border-right: 1px solid #ddd;\n              line-height: 30px;\n}\n.side-menu ul.brief > li > div .children-box li:first-child {\n              line-height: 40px;\n}\n.side-menu ul.brief > li:hover {\n          margin: -1px 0px;\n          border-top: 1px solid #ddd;\n          border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li:hover > div {\n            display: inline;\n}\n.side-menu ul.detail {\n      width: 110px;\n}\n.side-menu ul.detail > li > a {\n        padding: 0px 10px;\n}\n.side-menu ul.detail > li > div ul {\n        padding-left: 24px;\n}\n.side-menu ul.detail > li > div ul li {\n          line-height: 30px;\n}\n", ""]);
 
 	// exports
 
@@ -10455,6 +10455,27 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 	//
 	//
 	//
@@ -10659,9 +10680,9 @@
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
-	    staticClass: "app-left-menu"
+	    staticClass: "side-menu"
 	  }, [(_vm.mode == 'detail') ? _c('h4', {
-	    staticClass: "toggle-menu detail"
+	    staticClass: "menu-title detail"
 	  }, [_vm._v("\n        网站导航 "), _c('a', {
 	    staticClass: "fa fa-outdent",
 	    attrs: {
@@ -10673,7 +10694,7 @@
 	      }
 	    }
 	  })]) : _vm._e(), _vm._v(" "), (_vm.mode == 'brief') ? _c('h4', {
-	    staticClass: "toggle-menu brief"
+	    staticClass: "menu-title brief"
 	  }, [_vm._v("\n         "), _c('a', {
 	    staticClass: "fa fa-indent",
 	    attrs: {
