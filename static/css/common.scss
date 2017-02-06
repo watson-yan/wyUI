@@ -54,19 +54,82 @@ p {
     }
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 1.9rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.2rem;
+}
+
+h1,h2,h3,h4,h5 {
+    &.title {
+        border-bottom: $border;
+        padding-bottom: 5px;
+    }
+}
+
+label {
+    &.label {
+        padding: 2px 5px;
+        border-radius: 3px;
+        background: #e0e0e0;
+    }
+
+    &.left {
+        width: 100px;
+        height: 100px;
+        &::before {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &.primary {
+        color: #fff;
+        background: $primary;
+    }
+
+    &.info {
+        color: #fff;
+        background: $info;
+    }
+
+    &.danger {
+        color: #fff;
+        background: $danger;
+    }
+}
+
+pre {
+    margin: 0;
+    padding: 10px;
+    color: #444;
+    background: #f0f0f0;
+}
+
 /*
 ** 按钮部分
 */
 .button {
-    padding: 5px 20px;
+    padding: 7px 20px;
     border: none;
     cursor: pointer;
+    background: #e0e0e0;
     &.small {
         font-size: 12px;
         padding: 2px 12px;
     }
     &.big {
-        padding: 8px 45px;
+        padding: 11px 45px;
     }
     &.primary {
         color: #fff;

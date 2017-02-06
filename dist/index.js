@@ -9919,7 +9919,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 	// exports
 
@@ -9928,7 +9928,7 @@
 /* 16 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -9941,22 +9941,46 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	    data: function data() {
-	        return {
-	            list: [{ name: '阿萨德1', age: 123 }, { name: '阿萨德4', age: 124 }, { name: '阿萨德3', age: 125 }, { name: '阿萨德2', age: 126 }]
-	        };
+	        return {};
 	    },
 	    created: function created() {},
 
-	    methods: {
-	        add: function add() {
-	            this.list.forEach(function (item) {
-	                item.age = item.age + 1;
-	            });
-	        }
-	    }
+	    methods: {}
 	};
 
 /***/ },
@@ -9964,16 +9988,40 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _vm._m(0)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "init-page"
-	  }, [_vm._l((_vm.list), function(item) {
-	    return _c('p', [_vm._v("\n        " + _vm._s(item.name) + "," + _vm._s(item.age) + "岁\n    ")])
-	  }), _vm._v(" "), _c('button', {
-	    on: {
-	      "click": _vm.add
-	    }
-	  }, [_vm._v("点")])], 2)
-	},staticRenderFns: []}
+	  }, [_c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("按钮尺寸")]), _vm._v(" "), _c('button', {
+	    staticClass: "button small primary"
+	  }, [_vm._v("小按钮")]), _vm._v(" "), _c('button', {
+	    staticClass: "button"
+	  }, [_vm._v("默认按钮")]), _vm._v(" "), _c('button', {
+	    staticClass: "button big danger"
+	  }, [_vm._v("大按钮")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button small primary\">小按钮</button>\n<button class=\"button\">正常按钮</button>\n<button class=\"button big danger\">大按钮</button> \n        ")]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("按钮颜色")]), _vm._v(" "), _c('button', {
+	    staticClass: "button"
+	  }, [_vm._v("默认")]), _vm._v(" "), _c('button', {
+	    staticClass: "button primary"
+	  }, [_vm._v("主色")]), _vm._v(" "), _c('button', {
+	    staticClass: "button info"
+	  }, [_vm._v("信息")]), _vm._v(" "), _c('button', {
+	    staticClass: "button danger"
+	  }, [_vm._v("提示")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button\">默认</button>\n<button class=\"button primary\">主色</button>\n<button class=\"button info\">信息</button>\n<button class=\"button danger\">提示</button>        \n        ")]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("按钮效果")]), _vm._v(" "), _c('button', {
+	    staticClass: "button shadow"
+	  }, [_vm._v("阴影")]), _vm._v(" "), _c('button', {
+	    staticClass: "button primary shadow"
+	  }, [_vm._v("阴影")]), _vm._v(" "), _c('button', {
+	    staticClass: "button info shadow"
+	  }, [_vm._v("阴影")]), _vm._v(" "), _c('button', {
+	    staticClass: "button danger shadow"
+	  }, [_vm._v("阴影")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button shadow\">阴影</button>\n<button class=\"button primary shadow\">阴影</button>\n<button class=\"button info shadow\">阴影</button>\n<button class=\"button danger shadow\">阴影</button>       \n        ")])])
+	}]}
 	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
@@ -10064,7 +10112,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 	// exports
 
@@ -10073,7 +10121,7 @@
 /* 21 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -10086,22 +10134,37 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	    data: function data() {
-	        return {
-	            list: [{ name: '阿萨德1', age: 123 }, { name: '阿萨德4', age: 124 }, { name: '阿萨德3', age: 125 }, { name: '阿萨德2', age: 126 }]
-	        };
+	        return {};
 	    },
 	    created: function created() {},
 
-	    methods: {
-	        add: function add() {
-	            this.list.forEach(function (item) {
-	                item.age = item.age + 1;
-	            });
-	        }
-	    }
+	    methods: {}
 	};
 
 /***/ },
@@ -10109,16 +10172,56 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _vm._m(0)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "init-page"
-	  }, [_vm._l((_vm.list), function(item) {
-	    return _c('p', [_vm._v("\n        " + _vm._s(item.name) + "," + _vm._s(item.age) + "岁\n    ")])
-	  }), _vm._v(" "), _c('button', {
-	    on: {
-	      "click": _vm.add
+	  }, [_c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("普通标签")]), _vm._v(" "), _c('label', {
+	    staticClass: "label",
+	    attrs: {
+	      "for": ""
 	    }
-	  }, [_vm._v("点")])], 2)
-	},staticRenderFns: []}
+	  }, [_vm._v("default")]), _vm._v(" "), _c('label', {
+	    staticClass: "label primary",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("primary")]), _vm._v(" "), _c('label', {
+	    staticClass: "label info",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("info")]), _vm._v(" "), _c('label', {
+	    staticClass: "label danger",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("danger")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<label for=\"\" class=\"label\">default</label>\n<label for=\"\" class=\"label primary\">primary</label>\n<label for=\"\" class=\"label info\">info</label>\n<label for=\"\" class=\"label danger\">danger</label>\n        ")]), _vm._v(" "), _c('h3', {
+	    staticClass: "title"
+	  }, [_vm._v("箭头标签")]), _vm._v(" "), _c('label', {
+	    staticClass: "label left",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("default")]), _vm._v(" "), _c('label', {
+	    staticClass: "label primary left",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("primary")]), _vm._v(" "), _c('label', {
+	    staticClass: "label info",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("info")]), _vm._v(" "), _c('label', {
+	    staticClass: "label danger",
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("danger")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<label for=\"\" class=\"label\">default</label>\n<label for=\"\" class=\"label primary\">primary</label>\n<label for=\"\" class=\"label info\">info</label>\n<label for=\"\" class=\"label danger\">danger</label>\n        ")])])
+	}]}
 	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
@@ -10245,7 +10348,7 @@
 	exports.i(__webpack_require__(27), "");
 
 	// module
-	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 5px 20px;\n  border: none;\n  cursor: pointer;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 8px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.app {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.app > header {\n    flex-grow: 0;\n}\n.app > header nav {\n      height: 50px;\n      padding: 0px 30px;\n      line-height: 50px;\n      background: linear-gradient(to right, #1278f6, #00b4aa);\n}\n.app > header nav .logined-list {\n        margin: 0px;\n        padding-left: 0px;\n        list-style: none;\n}\n.app > header nav .logined-list li {\n          float: left;\n          padding: 0px 10px;\n}\n.app > article {\n    display: flex;\n    flex-grow: 1;\n}\n.app > article .app-left, .app > article .app-right {\n      display: inline-block;\n}\n.app > article .app-left {\n      flex-grow: 0;\n}\n.app > article .app-right {\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n}\n.app .app-content {\n    flex-grow: 1;\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 10px 0px 10px;\n    background: #e2e2e2;\n    overflow-y: auto;\n}\n.app .app-content .init-page {\n      padding: 5px;\n      background: #fff;\n      border: 1px solid #ececec;\n      box-shadow: 0 0 5px 5px #ececec;\n}\n", ""]);
+	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nlabel.label {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nlabel.left {\n  width: 100px;\n  height: 100px;\n}\nlabel.left::before {\n    width: 10px;\n    height: 10px;\n}\nlabel.primary {\n  color: #fff;\n  background: #007ACC;\n}\nlabel.info {\n  color: #fff;\n  background: #00b4aa;\n}\nlabel.danger {\n  color: #fff;\n  background: #f44336;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #e0e0e0;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.app {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.app > header {\n    flex-grow: 0;\n}\n.app > header nav {\n      height: 50px;\n      padding: 0px 30px;\n      line-height: 50px;\n      background: linear-gradient(to right, #1278f6, #00b4aa);\n}\n.app > header nav .logined-list {\n        margin: 0px;\n        padding-left: 0px;\n        list-style: none;\n}\n.app > header nav .logined-list li {\n          float: left;\n          padding: 0px 10px;\n}\n.app > article {\n    display: flex;\n    flex-grow: 1;\n}\n.app > article .app-left, .app > article .app-right {\n      display: inline-block;\n}\n.app > article .app-left {\n      flex-grow: 0;\n}\n.app > article .app-right {\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n}\n.app .app-content {\n    flex-grow: 1;\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 10px 0px 10px;\n    background: #e2e2e2;\n    overflow-y: auto;\n}\n.app .app-content .init-page {\n      padding: 5px;\n      background: #fff;\n      border: 1px solid #ececec;\n      box-shadow: 0 0 5px 5px #ececec;\n}\n", ""]);
 
 	// exports
 
@@ -10441,7 +10544,7 @@
 
 
 	// module
-	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 5px 20px;\n  border: none;\n  cursor: pointer;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 8px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.side-menu {\n  display: inline-block;\n  height: 100%;\n  background: #f8f8f8;\n  border-right: 1px solid #e1e2e2;\n  transition: all ease .2s;\n}\n.side-menu .menu-title {\n    margin: 0;\n    line-height: 40px;\n    background: #f2f3f4;\n    border-bottom: 1px solid #e1e2e2;\n}\n.side-menu .menu-title a {\n      float: right;\n      line-height: 40px;\n}\n.side-menu .menu-title.brief {\n      padding-left: 0px;\n}\n.side-menu .menu-title.brief a {\n        margin-right: 13px;\n}\n.side-menu .menu-title.detail {\n      padding-left: 18px;\n}\n.side-menu .menu-title.detail a {\n        margin-right: 8px;\n}\n.side-menu ul {\n    margin: 0px;\n    padding-left: 0px;\n    list-style: none;\n}\n.side-menu ul li {\n      line-height: 40px;\n}\n.side-menu ul li a {\n        display: block;\n        color: #888888;\n        font-size: 12px;\n}\n.side-menu ul li a:hover {\n          color: #007ACC;\n}\n.side-menu ul li:hover {\n        background: #f3f4f4;\n}\n.side-menu ul.brief {\n      width: 40px;\n}\n.side-menu ul.brief > li {\n        position: relative;\n}\n.side-menu ul.brief > li > a {\n          text-align: center;\n          font-size: 14px;\n}\n.side-menu ul.brief > li > div {\n          display: none;\n          position: absolute;\n          left: 40px;\n          top: 0;\n}\n.side-menu ul.brief > li > div .children-box {\n            padding-left: 0px;\n            width: 130px;\n            background: #fff;\n            border-top: 1px solid #ddd;\n            border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li > div .children-box li {\n              padding: 0px 10px;\n              border-left: 1px solid #ddd;\n              border-right: 1px solid #ddd;\n              line-height: 30px;\n}\n.side-menu ul.brief > li > div .children-box li:first-child {\n              line-height: 40px;\n}\n.side-menu ul.brief > li:hover {\n          margin: -1px 0px;\n          border-top: 1px solid #ddd;\n          border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li:hover > div {\n            display: inline;\n}\n.side-menu ul.detail {\n      width: 110px;\n}\n.side-menu ul.detail > li > a {\n        padding: 0px 10px;\n}\n.side-menu ul.detail > li > div ul {\n        padding-left: 24px;\n}\n.side-menu ul.detail > li > div ul li {\n          line-height: 30px;\n}\n", ""]);
+	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nlabel.label {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nlabel.left {\n  width: 100px;\n  height: 100px;\n}\nlabel.left::before {\n    width: 10px;\n    height: 10px;\n}\nlabel.primary {\n  color: #fff;\n  background: #007ACC;\n}\nlabel.info {\n  color: #fff;\n  background: #00b4aa;\n}\nlabel.danger {\n  color: #fff;\n  background: #f44336;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #e0e0e0;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.side-menu {\n  display: inline-block;\n  height: 100%;\n  background: #f8f8f8;\n  border-right: 1px solid #e1e2e2;\n  transition: all ease .2s;\n}\n.side-menu .menu-title {\n    margin: 0;\n    line-height: 40px;\n    font-size: 14px;\n    background: #f2f3f4;\n    border-bottom: 1px solid #e1e2e2;\n}\n.side-menu .menu-title a {\n      float: right;\n      line-height: 40px;\n}\n.side-menu .menu-title.brief {\n      padding-left: 0px;\n}\n.side-menu .menu-title.brief a {\n        margin-right: 13px;\n}\n.side-menu .menu-title.detail {\n      padding-left: 18px;\n}\n.side-menu .menu-title.detail a {\n        margin-right: 8px;\n}\n.side-menu ul {\n    margin: 0px;\n    padding-left: 0px;\n    list-style: none;\n}\n.side-menu ul li {\n      line-height: 40px;\n}\n.side-menu ul li a {\n        display: block;\n        color: #888888;\n        font-size: 12px;\n}\n.side-menu ul li a:hover {\n          color: #007ACC;\n}\n.side-menu ul li:hover {\n        background: #f3f4f4;\n}\n.side-menu ul.brief {\n      width: 40px;\n}\n.side-menu ul.brief > li {\n        position: relative;\n}\n.side-menu ul.brief > li > a {\n          text-align: center;\n          font-size: 14px;\n}\n.side-menu ul.brief > li > div {\n          display: none;\n          position: absolute;\n          left: 40px;\n          top: 0;\n}\n.side-menu ul.brief > li > div .children-box {\n            padding-left: 0px;\n            width: 130px;\n            background: #fff;\n            border-top: 1px solid #ddd;\n            border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li > div .children-box li {\n              padding: 0px 10px;\n              border-left: 1px solid #ddd;\n              border-right: 1px solid #ddd;\n              line-height: 30px;\n}\n.side-menu ul.brief > li > div .children-box li:first-child {\n              line-height: 40px;\n}\n.side-menu ul.brief > li:hover {\n          margin: -1px 0px;\n          border-top: 1px solid #ddd;\n          border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li:hover > div {\n            display: inline;\n}\n.side-menu ul.detail {\n      width: 110px;\n}\n.side-menu ul.detail > li > a {\n        padding: 0px 10px;\n}\n.side-menu ul.detail > li > div ul {\n        padding-left: 24px;\n}\n.side-menu ul.detail > li > div ul li {\n          line-height: 30px;\n}\n", ""]);
 
 	// exports
 
@@ -10455,6 +10558,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	//
 	//
 	//
 	//

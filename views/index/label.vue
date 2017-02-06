@@ -1,31 +1,43 @@
 <template>
     <div class="init-page">
-        <p v-for="item in list">
-            {{item.name}},{{item.age}}岁
-        </p>
-        <button @click="add">点</button>
+        <h3 class="title">普通标签</h3>
+        <label for="" class="label">default</label>
+        <label for="" class="label primary">primary</label>
+        <label for="" class="label info">info</label>
+        <label for="" class="label danger">danger</label>
+
+        <p>使用方式：</p>
+        <pre>
+&lt;label for="" class="label"&gt;default&lt;/label&gt;
+&lt;label for="" class="label primary"&gt;primary&lt;/label&gt;
+&lt;label for="" class="label info"&gt;info&lt;/label&gt;
+&lt;label for="" class="label danger"&gt;danger&lt;/label&gt;
+        </pre>
+
+        <h3 class="title">箭头标签</h3>
+        <label for="" class="label left">default</label>
+        <label for="" class="label primary left">primary</label>
+        <label for="" class="label info">info</label>
+        <label for="" class="label danger">danger</label>
+
+        <p>使用方式：</p>
+        <pre>
+&lt;label for="" class="label"&gt;default&lt;/label&gt;
+&lt;label for="" class="label primary"&gt;primary&lt;/label&gt;
+&lt;label for="" class="label info"&gt;info&lt;/label&gt;
+&lt;label for="" class="label danger"&gt;danger&lt;/label&gt;
+        </pre>
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            list: [
-                {name: '阿萨德1', age: 123},
-                {name: '阿萨德4', age: 124},
-                {name: '阿萨德3', age: 125},
-                {name: '阿萨德2', age: 126}
-            ]
         }
     },
     created() {
     },
     methods: {
-        add() {
-            this.list.forEach((item) => {
-                item.age = item.age + 1
-            })
-        }
     }
 }
 </script>

@@ -65,6 +65,7 @@
         .menu-title{
             margin: 0;
             line-height: 40px;
+            font-size: 14px;
             background: #f2f3f4;
             border-bottom: 1px solid #e1e2e2;
             a {
