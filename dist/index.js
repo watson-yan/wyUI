@@ -62,15 +62,15 @@
 
 	var _router2 = _interopRequireDefault(_router);
 
-	var _root = __webpack_require__(23);
+	var _root = __webpack_require__(29);
 
 	var _root2 = _interopRequireDefault(_root);
 
-	var _app = __webpack_require__(24);
+	var _app = __webpack_require__(30);
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _index = __webpack_require__(40);
+	var _index = __webpack_require__(46);
 
 	var _index2 = _interopRequireDefault(_index);
 
@@ -9280,13 +9280,21 @@
 
 	var _button2 = _interopRequireDefault(_button);
 
-	var _label = __webpack_require__(18);
+	var _span = __webpack_require__(18);
 
-	var _label2 = _interopRequireDefault(_label);
+	var _span2 = _interopRequireDefault(_span);
+
+	var _table = __webpack_require__(23);
+
+	var _table2 = _interopRequireDefault(_table);
+
+	var _form = __webpack_require__(26);
+
+	var _form2 = _interopRequireDefault(_form);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var routes = [{ path: '/', component: _index2.default }, { path: '/button', component: _button2.default }, { path: '/label', component: _label2.default }];
+	var routes = [{ path: '/', component: _index2.default }, { path: '/button', component: _button2.default }, { path: '/span', component: _span2.default }, { path: '/table', component: _table2.default }, { path: '/form', component: _form2.default }];
 
 	_vue2.default.use(_vueRouter2.default);
 	var routers = new _vueRouter2.default({
@@ -9760,6 +9768,7 @@
 	  return _c('div', {
 	    staticClass: "init-page"
 	  }, [_c('table', {
+	    staticClass: "table",
 	    attrs: {
 	      "border": "0"
 	    }
@@ -9863,7 +9872,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/apple/Code/wyUI/views/index/button.vue"
+	__vue_options__.__file = "/Users/apple/Code/wyUI/views/demo/button.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -9874,9 +9883,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-47a45118", __vue_options__)
+	    hotAPI.createRecord("data-v-6fa55589", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-47a45118", __vue_options__)
+	    hotAPI.reload("data-v-6fa55589", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] button.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -9900,8 +9909,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-47a45118!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./button.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-47a45118!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./button.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6fa55589!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./button.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6fa55589!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./button.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -9992,7 +10001,7 @@
 	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "init-page"
-	  }, [_c('h3', {
+	  }, [_c('h4', {
 	    staticClass: "title"
 	  }, [_vm._v("按钮尺寸")]), _vm._v(" "), _c('button', {
 	    staticClass: "button small primary"
@@ -10000,7 +10009,7 @@
 	    staticClass: "button"
 	  }, [_vm._v("默认按钮")]), _vm._v(" "), _c('button', {
 	    staticClass: "button big danger"
-	  }, [_vm._v("大按钮")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button small primary\">小按钮</button>\n<button class=\"button\">正常按钮</button>\n<button class=\"button big danger\">大按钮</button> \n        ")]), _vm._v(" "), _c('h3', {
+	  }, [_vm._v("大按钮")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button small primary\">小按钮</button>\n<button class=\"button\">正常按钮</button>\n<button class=\"button big danger\">大按钮</button> \n        ")]), _vm._v(" "), _c('h4', {
 	    staticClass: "title"
 	  }, [_vm._v("按钮颜色")]), _vm._v(" "), _c('button', {
 	    staticClass: "button"
@@ -10010,7 +10019,7 @@
 	    staticClass: "button info"
 	  }, [_vm._v("信息")]), _vm._v(" "), _c('button', {
 	    staticClass: "button danger"
-	  }, [_vm._v("提示")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button\">默认</button>\n<button class=\"button primary\">主色</button>\n<button class=\"button info\">信息</button>\n<button class=\"button danger\">提示</button>        \n        ")]), _vm._v(" "), _c('h3', {
+	  }, [_vm._v("提示")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<button class=\"button\">默认</button>\n<button class=\"button primary\">主色</button>\n<button class=\"button info\">信息</button>\n<button class=\"button danger\">提示</button>        \n        ")]), _vm._v(" "), _c('h4', {
 	    staticClass: "title"
 	  }, [_vm._v("按钮效果")]), _vm._v(" "), _c('button', {
 	    staticClass: "button shadow"
@@ -10026,7 +10035,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-47a45118", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-6fa55589", module.exports)
 	  }
 	}
 
@@ -10056,7 +10065,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/apple/Code/wyUI/views/index/label.vue"
+	__vue_options__.__file = "/Users/apple/Code/wyUI/views/demo/span.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -10067,12 +10076,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-f16d98bc", __vue_options__)
+	    hotAPI.createRecord("data-v-06b9053e", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-f16d98bc", __vue_options__)
+	    hotAPI.reload("data-v-06b9053e", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] label.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] span.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
 	module.exports = __vue_exports__
 
@@ -10093,8 +10102,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-f16d98bc!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./label.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-f16d98bc!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./label.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-06b9053e!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./span.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-06b9053e!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./span.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10176,62 +10185,558 @@
 	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "init-page"
-	  }, [_c('h3', {
+	  }, [_c('h4', {
 	    staticClass: "title"
-	  }, [_vm._v("普通标签")]), _vm._v(" "), _c('label', {
-	    staticClass: "label",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("default")]), _vm._v(" "), _c('label', {
-	    staticClass: "label primary",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("primary")]), _vm._v(" "), _c('label', {
-	    staticClass: "label info",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("info")]), _vm._v(" "), _c('label', {
-	    staticClass: "label danger",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("danger")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<label for=\"\" class=\"label\">default</label>\n<label for=\"\" class=\"label primary\">primary</label>\n<label for=\"\" class=\"label info\">info</label>\n<label for=\"\" class=\"label danger\">danger</label>\n        ")]), _vm._v(" "), _c('h3', {
+	  }, [_vm._v("普通标签")]), _vm._v(" "), _c('span', {
+	    staticClass: "span"
+	  }, [_vm._v("default")]), _vm._v(" "), _c('span', {
+	    staticClass: "span primary"
+	  }, [_vm._v("primary")]), _vm._v(" "), _c('span', {
+	    staticClass: "span info"
+	  }, [_vm._v("info")]), _vm._v(" "), _c('span', {
+	    staticClass: "span danger"
+	  }, [_vm._v("danger")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<span class=\"span\">default</span>\n<span class=\"span primary\">primary</span>\n<span class=\"span info\">info</span>\n<span class=\"span danger\">danger</span>\n        ")]), _vm._v(" "), _c('h4', {
 	    staticClass: "title"
-	  }, [_vm._v("箭头标签")]), _vm._v(" "), _c('label', {
-	    staticClass: "label left",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("default")]), _vm._v(" "), _c('label', {
-	    staticClass: "label primary left",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("primary")]), _vm._v(" "), _c('label', {
-	    staticClass: "label info",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("info")]), _vm._v(" "), _c('label', {
-	    staticClass: "label danger",
-	    attrs: {
-	      "for": ""
-	    }
-	  }, [_vm._v("danger")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<label for=\"\" class=\"label\">default</label>\n<label for=\"\" class=\"label primary\">primary</label>\n<label for=\"\" class=\"label info\">info</label>\n<label for=\"\" class=\"label danger\">danger</label>\n        ")])])
+	  }, [_vm._v("箭头标签")]), _vm._v(" "), _c('span', {
+	    staticClass: "span left"
+	  }, [_vm._v("default")]), _vm._v(" "), _c('span', {
+	    staticClass: "span primary left"
+	  }, [_vm._v("primary")]), _vm._v(" "), _c('span', {
+	    staticClass: "span info"
+	  }, [_vm._v("info")]), _vm._v(" "), _c('span', {
+	    staticClass: "span danger"
+	  }, [_vm._v("danger")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<span class=\"span\">default</span>\n<span class=\"span primary\">primary</span>\n<span class=\"span info\">info</span>\n<span class=\"span danger\">danger</span>\n        ")])])
 	}]}
 	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-f16d98bc", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-06b9053e", module.exports)
 	  }
 	}
 
 /***/ },
 /* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+
+	/* script */
+	__vue_exports__ = __webpack_require__(24)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(25)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/apple/Code/wyUI/views/demo/table.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-4a41dec7", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-4a41dec7", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] table.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	exports.default = {
+	    data: function data() {
+	        return {};
+	    },
+
+	    computed: {
+	        list: function list() {
+	            return this.$store.state.list;
+	        }
+	    },
+	    methods: {}
+	};
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    staticClass: "init-page"
+	  }, [_c('h4', {
+	    staticClass: "title"
+	  }, [_vm._v("默认颜色表格")]), _vm._v(" "), _c('table', {
+	    staticClass: "table",
+	    attrs: {
+	      "border": "0"
+	    }
+	  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.list), function(item) {
+	    return _c('tr', {
+	      staticClass: "center"
+	    }, [_c('td', [_vm._v(_vm._s(item.id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.createTime))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.money))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.customer))]), _vm._v(" "), _vm._m(1, true)])
+	  }))]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<table class=\"table\">\n    <thead>\n        <th>...</th>\n    </thead>\n    <tbody>\n        <tr>\n            <td>...</td>\n        </tr>\n    </tbody>\n</table>\n        ")]), _vm._v(" "), _c('h4', {
+	    staticClass: "title"
+	  }, [_vm._v("主颜色表格")]), _vm._v(" "), _c('table', {
+	    staticClass: "table primary",
+	    attrs: {
+	      "border": "0"
+	    }
+	  }, [_vm._m(2), _vm._v(" "), _c('tbody', _vm._l((_vm.list), function(item) {
+	    return _c('tr', {
+	      staticClass: "center"
+	    }, [_c('td', [_vm._v(_vm._s(item.id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.createTime))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.money))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.customer))]), _vm._v(" "), _vm._m(3, true)])
+	  }))]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<table class=\"table primary\">\n    <thead>...</thead>\n    <tbody>...</tbody>\n</table>\n        ")]), _vm._v(" "), _c('h4', {
+	    staticClass: "title"
+	  }, [_vm._v("斑马线效果")]), _vm._v(" "), _c('table', {
+	    staticClass: "table table-striped ",
+	    attrs: {
+	      "border": "0"
+	    }
+	  }, [_vm._m(4), _vm._v(" "), _c('tbody', _vm._l((_vm.list), function(item) {
+	    return _c('tr', {
+	      staticClass: "center"
+	    }, [_c('td', [_vm._v(_vm._s(item.id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.createTime))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.money))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.customer))]), _vm._v(" "), _vm._m(5, true)])
+	  }))]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<table class=\"table primary\">\n    <thead>...</thead>\n    <tbody>...</tbody>\n</table>\n        ")])])
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('thead', [_c('th', [_vm._v("订单编号")]), _vm._v(" "), _c('th', [_vm._v("成交时间")]), _vm._v(" "), _c('th', [_vm._v("成交金额")]), _vm._v(" "), _c('th', [_vm._v("客户")]), _vm._v(" "), _c('th', [_vm._v("操作")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('td', [_c('a', {
+	    staticClass: "primary",
+	    attrs: {
+	      "to": "/"
+	    }
+	  }, [_vm._v("详情")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('thead', [_c('th', [_vm._v("订单编号")]), _vm._v(" "), _c('th', [_vm._v("成交时间")]), _vm._v(" "), _c('th', [_vm._v("成交金额")]), _vm._v(" "), _c('th', [_vm._v("客户")]), _vm._v(" "), _c('th', [_vm._v("操作")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('td', [_c('a', {
+	    staticClass: "primary",
+	    attrs: {
+	      "to": "/"
+	    }
+	  }, [_vm._v("详情")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('thead', [_c('th', [_vm._v("订单编号")]), _vm._v(" "), _c('th', [_vm._v("成交时间")]), _vm._v(" "), _c('th', [_vm._v("成交金额")]), _vm._v(" "), _c('th', [_vm._v("客户")]), _vm._v(" "), _c('th', [_vm._v("操作")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('td', [_c('a', {
+	    staticClass: "primary",
+	    attrs: {
+	      "to": "/"
+	    }
+	  }, [_vm._v("详情")])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-4a41dec7", module.exports)
+	  }
+	}
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+
+	/* script */
+	__vue_exports__ = __webpack_require__(27)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(28)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/apple/Code/wyUI/views/demo/form.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-c37b744a", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-c37b744a", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] form.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 27 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	exports.default = {
+	    data: function data() {
+	        return {};
+	    },
+
+	    methods: {}
+	};
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _vm._m(0)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    staticClass: "init-page"
+	  }, [_c('section', {
+	    staticClass: "flex"
+	  }, [_c('form', {
+	    staticClass: "form col4",
+	    attrs: {
+	      "action": ""
+	    }
+	  }, [_c('h4', {
+	    staticClass: "form-title"
+	  }, [_vm._v("表单测试")]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("用户名:")]), _vm._v(" "), _c('input', {
+	    staticClass: "underline",
+	    attrs: {
+	      "type": "text"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("密　码:")]), _vm._v(" "), _c('input', {
+	    staticClass: "underline",
+	    attrs: {
+	      "type": "password"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("邮　箱:")]), _vm._v(" "), _c('input', {
+	    staticClass: "underline",
+	    attrs: {
+	      "type": "email"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("手　机:")]), _vm._v(" "), _c('input', {
+	    staticClass: "underline",
+	    attrs: {
+	      "type": "text"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("地　址:")]), _vm._v(" "), _c('input', {
+	    staticClass: "underline",
+	    attrs: {
+	      "type": "text"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group"
+	  }, [_c('button', {
+	    staticClass: "button primary shadow pull-right"
+	  }, [_vm._v("确认")])])]), _vm._v(" "), _c('div', {
+	    staticClass: "col1"
+	  }), _vm._v(" "), _c('form', {
+	    staticClass: "form col4",
+	    attrs: {
+	      "action": ""
+	    }
+	  }, [_c('h4', {
+	    staticClass: "form-title"
+	  }, [_vm._v("表单测试")]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("用户名:")]), _vm._v(" "), _c('input', {
+	    attrs: {
+	      "type": "text"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("密　码:")]), _vm._v(" "), _c('input', {
+	    attrs: {
+	      "type": "password"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("邮　箱:")]), _vm._v(" "), _c('input', {
+	    attrs: {
+	      "type": "email"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("手　机:")]), _vm._v(" "), _c('input', {
+	    attrs: {
+	      "type": "text"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group item"
+	  }, [_c('label', {
+	    staticStyle: {
+	      "align-self": "top"
+	    },
+	    attrs: {
+	      "for": ""
+	    }
+	  }, [_vm._v("地　址:")]), _vm._v(" "), _c('textarea', {
+	    attrs: {
+	      "name": "",
+	      "id": "",
+	      "rows": "5"
+	    }
+	  })]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group"
+	  }, [_c('button', {
+	    staticClass: "button danger shadow pull-right"
+	  }, [_vm._v("确认")])])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-c37b744a", module.exports)
+	  }
+	}
+
+/***/ },
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10255,7 +10760,7 @@
 	var store = new _vuex2.default.Store({
 	    state: {
 	        count: 0,
-	        list: [{ id: '001', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '002', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '003', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '004', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '005', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '006', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '007', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }]
+	        list: [{ id: '001', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '002', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '003', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '004', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }]
 	    },
 	    mutations: {
 	        add: function add(state) {
@@ -10267,20 +10772,20 @@
 	exports.default = store;
 
 /***/ },
-/* 24 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(25)
+	__webpack_require__(31)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(28)
+	__vue_exports__ = __webpack_require__(34)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(39)
+	var __vue_template__ = __webpack_require__(45)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -10314,13 +10819,13 @@
 
 
 /***/ },
-/* 25 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(26);
+	var content = __webpack_require__(32);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -10340,21 +10845,21 @@
 	}
 
 /***/ },
-/* 26 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
 	// imports
-	exports.i(__webpack_require__(27), "");
+	exports.i(__webpack_require__(33), "");
 
 	// module
-	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nlabel.label {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nlabel.left {\n  width: 100px;\n  height: 100px;\n}\nlabel.left::before {\n    width: 10px;\n    height: 10px;\n}\nlabel.primary {\n  color: #fff;\n  background: #007ACC;\n}\nlabel.info {\n  color: #fff;\n  background: #00b4aa;\n}\nlabel.danger {\n  color: #fff;\n  background: #f44336;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #e0e0e0;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.app {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.app > header {\n    flex-grow: 0;\n}\n.app > header nav {\n      height: 50px;\n      padding: 0px 30px;\n      line-height: 50px;\n      background: linear-gradient(to right, #1278f6, #00b4aa);\n}\n.app > header nav .logined-list {\n        margin: 0px;\n        padding-left: 0px;\n        list-style: none;\n}\n.app > header nav .logined-list li {\n          float: left;\n          padding: 0px 10px;\n}\n.app > article {\n    display: flex;\n    flex-grow: 1;\n}\n.app > article .app-left, .app > article .app-right {\n      display: inline-block;\n}\n.app > article .app-left {\n      flex-grow: 0;\n}\n.app > article .app-right {\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n}\n.app .app-content {\n    flex-grow: 1;\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 10px 0px 10px;\n    background: #e2e2e2;\n    overflow-y: auto;\n}\n.app .app-content .init-page {\n      padding: 5px;\n      background: #fff;\n      border: 1px solid #ececec;\n      box-shadow: 0 0 5px 5px #ececec;\n}\n", ""]);
+	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 杂项生成器\n*/\n/*\n** 布局部分\n** 采用flex布局\n*/\n.flex {\n  display: flex;\n}\n.flex .col1 {\n    flex-grow: 1;\n}\n.flex .col2 {\n    flex-grow: 2;\n}\n.flex .col3 {\n    flex-grow: 3;\n}\n.flex .col4 {\n    flex-grow: 4;\n}\n.flex .col5 {\n    flex-grow: 5;\n}\n.flex .col6 {\n    flex-grow: 6;\n}\n.flex .col7 {\n    flex-grow: 7;\n}\n.flex .col8 {\n    flex-grow: 8;\n}\n.flex .col9 {\n    flex-grow: 9;\n}\n.flex .col10 {\n    flex-grow: 10;\n}\n.flex.column {\n    flex-direction: column;\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nspan.span {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nspan.left {\n  position: relative;\n}\nspan.left::before {\n    display: block;\n    display: block;\n    content: ' ';\n    position: absolute;\n    top: 0;\n    background: #e0e0e0;\n    transform: rotate(45deg);\n}\nspan.primary {\n  color: #fff;\n  background: #007ACC;\n}\nspan.info {\n  color: #fff;\n  background: #00b4aa;\n}\nspan.danger {\n  color: #fff;\n  background: #f44336;\n}\nlabel {\n  align-self: center;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 输入框部分\n*/\ninput {\n  padding: 2px 5px;\n}\ninput.underline {\n    border: none;\n    border-bottom: 1px solid #ddd;\n    border-radius: none;\n    outline: none;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #eee;\n  border-radius: 2px;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable.table {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.table.primary thead {\n    color: #fff;\n    background-color: #007ACC;\n    background-image: linear-gradient(#5eb2ea, #007ACC);\n    border: 1px solid #5eb2ea;\n}\ntable.table th, table.table td {\n    border-collapse: collapse;\n}\ntable.table thead {\n    line-height: 30px;\n    border: 1px solid #ddd;\n    background-color: #eee;\n    background-image: linear-gradient(#fcfcfc, #eee);\n}\ntable.table thead th {\n      border: none;\n}\ntable.table tbody tr {\n    line-height: 32px;\n}\ntable.table tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable.table tbody tr.center td {\n      text-align: center;\n}\ntable.table-striped tbody tr:nth-child(2n) {\n  background: #f0f0f0;\n}\n\n/*\n** 表单部分\n*/\n.form .form-title {\n  margin: 8px 0px;\n  font-weight: 400;\n  border-bottom: 1px solid #ddd;\n}\n.form .form-group {\n  margin: 8px 0px;\n}\n.form .form-group.item {\n    display: flex;\n}\n.form .form-group.item label {\n      color: #444;\n      padding: 0px 5px;\n}\n.form .form-group.item input, .form .form-group.item textarea {\n      flex-grow: 1;\n}\n\n/**\n** 通用部分\n**/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.app {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.app > header {\n    flex-grow: 0;\n}\n.app > header nav {\n      height: 50px;\n      padding: 0px 30px;\n      line-height: 50px;\n      background: linear-gradient(to right, #1278f6, #00b4aa);\n}\n.app > header nav .logined-list {\n        margin: 0px;\n        padding-left: 0px;\n        list-style: none;\n}\n.app > header nav .logined-list li {\n          float: left;\n          padding: 0px 10px;\n}\n.app > article {\n    display: flex;\n    flex-grow: 1;\n}\n.app > article .app-left, .app > article .app-right {\n      display: inline-block;\n}\n.app > article .app-left {\n      flex-grow: 0;\n}\n.app > article .app-right {\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n}\n.app .app-content {\n    flex-grow: 1;\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 10px 0px 10px;\n    background: #e2e2e2;\n    overflow-y: auto;\n}\n.app .app-content .init-page {\n      padding: 10px;\n      background: #fff;\n      border: 1px solid #ececec;\n      box-shadow: 0 0 5px 5px #ececec;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 27 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -10368,7 +10873,7 @@
 
 
 /***/ },
-/* 28 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10377,11 +10882,11 @@
 	    value: true
 	});
 
-	var _menu = __webpack_require__(29);
+	var _menu = __webpack_require__(35);
 
 	var _menu2 = _interopRequireDefault(_menu);
 
-	var _popup = __webpack_require__(34);
+	var _popup = __webpack_require__(40);
 
 	var _popup2 = _interopRequireDefault(_popup);
 
@@ -10463,20 +10968,20 @@
 	};
 
 /***/ },
-/* 29 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(30)
+	__webpack_require__(36)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(32)
+	__vue_exports__ = __webpack_require__(38)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(33)
+	var __vue_template__ = __webpack_require__(39)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -10510,13 +11015,13 @@
 
 
 /***/ },
-/* 30 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(31);
+	var content = __webpack_require__(37);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -10536,7 +11041,7 @@
 	}
 
 /***/ },
-/* 31 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -10544,13 +11049,13 @@
 
 
 	// module
-	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nlabel.label {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nlabel.left {\n  width: 100px;\n  height: 100px;\n}\nlabel.left::before {\n    width: 10px;\n    height: 10px;\n}\nlabel.primary {\n  color: #fff;\n  background: #007ACC;\n}\nlabel.info {\n  color: #fff;\n  background: #00b4aa;\n}\nlabel.danger {\n  color: #fff;\n  background: #f44336;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #e0e0e0;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.primary thead {\n    border: 1px solid #007ACC;\n}\ntable th, table td {\n    border-collapse: collapse;\n}\ntable thead {\n    line-height: 30px;\n    color: #fff;\n    background: #007ACC;\n}\ntable thead th {\n      border: none;\n}\ntable tbody tr {\n    line-height: 32px;\n    background: #f7f7f7;\n}\ntable tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable tbody tr.center td {\n      text-align: center;\n}\n\n/*\n** 通用部分\n*/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.side-menu {\n  display: inline-block;\n  height: 100%;\n  background: #f8f8f8;\n  border-right: 1px solid #e1e2e2;\n  transition: all ease .2s;\n}\n.side-menu .menu-title {\n    margin: 0;\n    line-height: 40px;\n    font-size: 14px;\n    background: #f2f3f4;\n    border-bottom: 1px solid #e1e2e2;\n}\n.side-menu .menu-title a {\n      float: right;\n      line-height: 40px;\n}\n.side-menu .menu-title.brief {\n      padding-left: 0px;\n}\n.side-menu .menu-title.brief a {\n        margin-right: 13px;\n}\n.side-menu .menu-title.detail {\n      padding-left: 18px;\n}\n.side-menu .menu-title.detail a {\n        margin-right: 8px;\n}\n.side-menu ul {\n    margin: 0px;\n    padding-left: 0px;\n    list-style: none;\n}\n.side-menu ul li {\n      line-height: 40px;\n}\n.side-menu ul li a {\n        display: block;\n        color: #888888;\n        font-size: 12px;\n}\n.side-menu ul li a:hover {\n          color: #007ACC;\n}\n.side-menu ul li:hover {\n        background: #f3f4f4;\n}\n.side-menu ul.brief {\n      width: 40px;\n}\n.side-menu ul.brief > li {\n        position: relative;\n}\n.side-menu ul.brief > li > a {\n          text-align: center;\n          font-size: 14px;\n}\n.side-menu ul.brief > li > div {\n          display: none;\n          position: absolute;\n          left: 40px;\n          top: 0;\n}\n.side-menu ul.brief > li > div .children-box {\n            padding-left: 0px;\n            width: 130px;\n            background: #fff;\n            border-top: 1px solid #ddd;\n            border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li > div .children-box li {\n              padding: 0px 10px;\n              border-left: 1px solid #ddd;\n              border-right: 1px solid #ddd;\n              line-height: 30px;\n}\n.side-menu ul.brief > li > div .children-box li:first-child {\n              line-height: 40px;\n}\n.side-menu ul.brief > li:hover {\n          margin: -1px 0px;\n          border-top: 1px solid #ddd;\n          border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li:hover > div {\n            display: inline;\n}\n.side-menu ul.detail {\n      width: 110px;\n}\n.side-menu ul.detail > li > a {\n        padding: 0px 10px;\n}\n.side-menu ul.detail > li > div ul {\n        padding-left: 24px;\n}\n.side-menu ul.detail > li > div ul li {\n          line-height: 30px;\n}\n", ""]);
+	exports.push([module.id, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 杂项生成器\n*/\n/*\n** 布局部分\n** 采用flex布局\n*/\n.flex {\n  display: flex;\n}\n.flex .col1 {\n    flex-grow: 1;\n}\n.flex .col2 {\n    flex-grow: 2;\n}\n.flex .col3 {\n    flex-grow: 3;\n}\n.flex .col4 {\n    flex-grow: 4;\n}\n.flex .col5 {\n    flex-grow: 5;\n}\n.flex .col6 {\n    flex-grow: 6;\n}\n.flex .col7 {\n    flex-grow: 7;\n}\n.flex .col8 {\n    flex-grow: 8;\n}\n.flex .col9 {\n    flex-grow: 9;\n}\n.flex .col10 {\n    flex-grow: 10;\n}\n.flex.column {\n    flex-direction: column;\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nspan.span {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nspan.left {\n  position: relative;\n}\nspan.left::before {\n    display: block;\n    display: block;\n    content: ' ';\n    position: absolute;\n    top: 0;\n    background: #e0e0e0;\n    transform: rotate(45deg);\n}\nspan.primary {\n  color: #fff;\n  background: #007ACC;\n}\nspan.info {\n  color: #fff;\n  background: #00b4aa;\n}\nspan.danger {\n  color: #fff;\n  background: #f44336;\n}\nlabel {\n  align-self: center;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 输入框部分\n*/\ninput {\n  padding: 2px 5px;\n}\ninput.underline {\n    border: none;\n    border-bottom: 1px solid #ddd;\n    border-radius: none;\n    outline: none;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #eee;\n  border-radius: 2px;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n\n/*\n** 表格\n*/\ntable.table {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.table.primary thead {\n    color: #fff;\n    background-color: #007ACC;\n    background-image: linear-gradient(#5eb2ea, #007ACC);\n    border: 1px solid #5eb2ea;\n}\ntable.table th, table.table td {\n    border-collapse: collapse;\n}\ntable.table thead {\n    line-height: 30px;\n    border: 1px solid #ddd;\n    background-color: #eee;\n    background-image: linear-gradient(#fcfcfc, #eee);\n}\ntable.table thead th {\n      border: none;\n}\ntable.table tbody tr {\n    line-height: 32px;\n}\ntable.table tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable.table tbody tr.center td {\n      text-align: center;\n}\ntable.table-striped tbody tr:nth-child(2n) {\n  background: #f0f0f0;\n}\n\n/*\n** 表单部分\n*/\n.form .form-title {\n  margin: 8px 0px;\n  font-weight: 400;\n  border-bottom: 1px solid #ddd;\n}\n.form .form-group {\n  margin: 8px 0px;\n}\n.form .form-group.item {\n    display: flex;\n}\n.form .form-group.item label {\n      color: #444;\n      padding: 0px 5px;\n}\n.form .form-group.item input, .form .form-group.item textarea {\n      flex-grow: 1;\n}\n\n/**\n** 通用部分\n**/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.side-menu {\n  display: inline-block;\n  height: 100%;\n  background: #f8f8f8;\n  border-right: 1px solid #e1e2e2;\n  transition: all ease .2s;\n}\n.side-menu .menu-title {\n    margin: 0;\n    line-height: 40px;\n    font-size: 14px;\n    background: #f2f3f4;\n    border-bottom: 1px solid #e1e2e2;\n}\n.side-menu .menu-title a {\n      float: right;\n      line-height: 40px;\n}\n.side-menu .menu-title.brief {\n      padding-left: 0px;\n}\n.side-menu .menu-title.brief a {\n        margin-right: 13px;\n}\n.side-menu .menu-title.detail {\n      padding-left: 18px;\n}\n.side-menu .menu-title.detail a {\n        margin-right: 8px;\n}\n.side-menu ul {\n    margin: 0px;\n    padding-left: 0px;\n    list-style: none;\n}\n.side-menu ul li {\n      line-height: 40px;\n}\n.side-menu ul li a {\n        display: block;\n        color: #888888;\n        font-size: 12px;\n}\n.side-menu ul li a:hover {\n          color: #007ACC;\n}\n.side-menu ul li:hover {\n        background: #f3f4f4;\n}\n.side-menu ul.brief {\n      width: 40px;\n}\n.side-menu ul.brief > li {\n        position: relative;\n}\n.side-menu ul.brief > li > a {\n          text-align: center;\n          font-size: 14px;\n}\n.side-menu ul.brief > li > div {\n          display: none;\n          position: absolute;\n          left: 40px;\n          top: 0;\n}\n.side-menu ul.brief > li > div .children-box {\n            padding-left: 0px;\n            width: 130px;\n            background: #fff;\n            border-top: 1px solid #ddd;\n            border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li > div .children-box li {\n              padding: 0px 10px;\n              border-left: 1px solid #ddd;\n              border-right: 1px solid #ddd;\n              line-height: 30px;\n}\n.side-menu ul.brief > li > div .children-box li:first-child {\n              line-height: 40px;\n}\n.side-menu ul.brief > li:hover {\n          margin: -1px 0px;\n          border-top: 1px solid #ddd;\n          border-bottom: 1px solid #ddd;\n}\n.side-menu ul.brief > li:hover > div {\n            display: inline;\n}\n.side-menu ul.detail {\n      width: 110px;\n}\n.side-menu ul.detail > li > a {\n        padding: 0px 10px;\n}\n.side-menu ul.detail > li > div ul {\n        padding-left: 24px;\n}\n.side-menu ul.detail > li > div ul li {\n          line-height: 30px;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 32 */
+/* 38 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10739,7 +11244,7 @@
 	        };
 	    },
 	    created: function created() {
-	        this.list = [{ title: '综合首页', to: '/', icon: 'fa fa-home' }, { title: '按钮标签', to: '/button', icon: 'fa fa-hand-o-up', children: [{ title: '按钮', to: '/button' }, { title: '标签', to: '/label' }] }, { title: '文本表单', to: '/button', icon: 'fa fa-align-left' }, { title: '弹框提醒', to: '/', icon: 'fa fa-arrows-alt' }, { title: '加载动画', to: '', icon: 'fa fa-hourglass-half' }];
+	        this.list = [{ title: '综合首页', to: '/', icon: 'fa fa-home' }, { title: '按钮标签', to: '/button', icon: 'fa fa-hand-o-up', children: [{ title: '按钮', to: '/button' }, { title: '标签', to: '/span' }] }, { title: '文本表单', to: '/', icon: 'fa fa-align-left', children: [{ title: '表单', to: '/form' }, { title: '表格', to: '/table' }] }, { title: '弹框提醒', to: '/', icon: 'fa fa-arrows-alt' }, { title: '加载动画', to: '', icon: 'fa fa-hourglass-half' }];
 	    },
 
 	    watch: {
@@ -10779,7 +11284,7 @@
 	};
 
 /***/ },
-/* 33 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -10892,20 +11397,20 @@
 	}
 
 /***/ },
-/* 34 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(35)
+	__webpack_require__(41)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(37)
+	__vue_exports__ = __webpack_require__(43)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(38)
+	var __vue_template__ = __webpack_require__(44)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -10939,13 +11444,13 @@
 
 
 /***/ },
-/* 35 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(36);
+	var content = __webpack_require__(42);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -10965,7 +11470,7 @@
 	}
 
 /***/ },
-/* 36 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -10979,7 +11484,7 @@
 
 
 /***/ },
-/* 37 */
+/* 43 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11043,7 +11548,7 @@
 	};
 
 /***/ },
-/* 38 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11082,7 +11587,7 @@
 	}
 
 /***/ },
-/* 39 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11125,7 +11630,7 @@
 	}
 
 /***/ },
-/* 40 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11138,15 +11643,15 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	var _breadcrumb = __webpack_require__(41);
+	var _breadcrumb = __webpack_require__(47);
 
 	var _breadcrumb2 = _interopRequireDefault(_breadcrumb);
 
-	var _pagination = __webpack_require__(46);
+	var _pagination = __webpack_require__(52);
 
 	var _pagination2 = _interopRequireDefault(_pagination);
 
-	var _modal = __webpack_require__(51);
+	var _modal = __webpack_require__(57);
 
 	var _modal2 = _interopRequireDefault(_modal);
 
@@ -11161,20 +11666,20 @@
 	};
 
 /***/ },
-/* 41 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(42)
+	__webpack_require__(48)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(44)
+	__vue_exports__ = __webpack_require__(50)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(45)
+	var __vue_template__ = __webpack_require__(51)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -11208,13 +11713,13 @@
 
 
 /***/ },
-/* 42 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(43);
+	var content = __webpack_require__(49);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -11234,7 +11739,7 @@
 	}
 
 /***/ },
-/* 43 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -11248,7 +11753,7 @@
 
 
 /***/ },
-/* 44 */
+/* 50 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11292,7 +11797,7 @@
 	};
 
 /***/ },
-/* 45 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11319,20 +11824,20 @@
 	}
 
 /***/ },
-/* 46 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(47)
+	__webpack_require__(53)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(49)
+	__vue_exports__ = __webpack_require__(55)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(50)
+	var __vue_template__ = __webpack_require__(56)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -11366,13 +11871,13 @@
 
 
 /***/ },
-/* 47 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(48);
+	var content = __webpack_require__(54);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -11392,7 +11897,7 @@
 	}
 
 /***/ },
-/* 48 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -11406,7 +11911,7 @@
 
 
 /***/ },
-/* 49 */
+/* 55 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11588,7 +12093,7 @@
 	};
 
 /***/ },
-/* 50 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11643,20 +12148,20 @@
 	}
 
 /***/ },
-/* 51 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(52)
+	__webpack_require__(58)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(54)
+	__vue_exports__ = __webpack_require__(60)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(55)
+	var __vue_template__ = __webpack_require__(61)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -11690,13 +12195,13 @@
 
 
 /***/ },
-/* 52 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(53);
+	var content = __webpack_require__(59);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -11716,7 +12221,7 @@
 	}
 
 /***/ },
-/* 53 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -11730,7 +12235,7 @@
 
 
 /***/ },
-/* 54 */
+/* 60 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11799,7 +12304,7 @@
 	};
 
 /***/ },
-/* 55 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

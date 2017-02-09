@@ -4,7 +4,21 @@ html, body {
     font-size: 14px;
     font-family: 'Microsoft Yahei'
 }
+/*
+** 杂项生成器
+*/
 
+// 标签的伪元素箭头
+@mixin arrow($color) {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    background: $color;
+    transform: rotate(45deg);
+}
+
+// 文本颜色生成器
 @mixin text-Color($color) {
     color: $color
 }
@@ -16,6 +30,51 @@ $danger: #f44336;
 
 // 边框
 $border: 1px solid #ddd;
+
+
+
+/*
+** 布局部分
+** 采用flex布局
+*/
+.flex {
+    display: flex;
+    .col1 {
+        flex-grow: 1;
+    }
+    .col2 {
+        flex-grow: 2;
+    }    
+    .col3 {
+        flex-grow: 3;
+    }    
+    .col4 {
+        flex-grow: 4;
+    }    
+    .col5 {
+        flex-grow: 5;
+    }    
+    .col6 {
+        flex-grow: 6;
+    }    
+    .col7 {
+        flex-grow: 7;
+    }
+    .col8 {
+        flex-grow: 8;
+    }
+    .col9 {
+        flex-grow: 9;
+    }
+    .col10 {
+        flex-grow: 10;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+}
+
 
 /*
 ** 链接部分
@@ -77,19 +136,18 @@ h1,h2,h3,h4,h5 {
     }
 }
 
-label {
-    &.label {
+span {
+    &.span {
         padding: 2px 5px;
         border-radius: 3px;
         background: #e0e0e0;
     }
 
     &.left {
-        width: 100px;
-        height: 100px;
+        position: relative;
         &::before {
-            width: 10px;
-            height: 10px;
+            display: block;
+            @include arrow(#e0e0e0);
         }
     }
 
@@ -109,6 +167,10 @@ label {
     }
 }
 
+label {
+    align-self: center;
+}
+
 pre {
     margin: 0;
     padding: 10px;
@@ -117,13 +179,31 @@ pre {
 }
 
 /*
+** 输入框部分
+*/
+input {
+    padding: 2px 5px;
+    &.underline {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        border-radius: none;
+        outline: none;
+    }
+}
+input[type='text'], input[type='password'] {
+
+}
+
+
+/*
 ** 按钮部分
 */
 .button {
     padding: 7px 20px;
     border: none;
     cursor: pointer;
-    background: #e0e0e0;
+    background: #eee;
+    border-radius: 2px;
     &.small {
         font-size: 12px;
         padding: 2px 12px;
@@ -165,44 +245,87 @@ pre {
 ** 表格
 */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    &.primary {
-        thead{
-            border: 1px solid #007ACC;
-        }
-    }
-    th,td {
+    &.table {
+        width: 100%;
         border-collapse: collapse;
-    }
-    thead {
-        line-height: 30px;
-        color: #fff;
-        background: $primary;
-        th {
-            border: none;
+        &.primary {
+            thead{
+                color: #fff;
+                background-color: $primary;
+                background-image: linear-gradient(#5eb2ea, $primary);
+                border: 1px solid #5eb2ea;
+            }
+        }
+        th,td {
+            border-collapse: collapse;
+        }
+        thead {
+            line-height: 30px;
+            border: $border;
+            background-color: #eee;
+            background-image: linear-gradient(#fcfcfc, #eee);
+            th {
+                border: none;
+            }
+        }
+        tbody {
+            tr {
+                line-height: 32px;
+                td {
+                    font-size: 12px;
+                    border: $border;
+                }
+                &.center {
+                    td {
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
-    tbody {
-        tr {
-            line-height: 32px;
-            background: #f7f7f7;
-            td {
-                font-size: 12px;
-                border: $border;
-            }
-            &.center {
-                td {
-                    text-align: center;
-                }
+    &.table-striped {
+        tbody {
+            tr:nth-child(2n) {
+                background: #f0f0f0;
             }
         }
     }
 }
 
+
 /*
+** 表单部分
+*/
+.form {
+    .form-title {
+        margin: 8px 0px;
+        font-weight: 400;
+        border-bottom: 1px solid #ddd;
+    }
+    .form-group {
+        margin: 8px 0px;
+        &.item {
+            display: flex;
+            label {
+                color: #444;
+                padding: 0px 5px;
+            }
+            input, textarea{
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+/**
 ** 通用部分
-*/ 
+**/ 
+
+// 浮动
 .pull-left {
     float: left;
 }

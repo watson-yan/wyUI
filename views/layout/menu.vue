@@ -183,9 +183,12 @@
                     {title: '综合首页', to: '/', icon: 'fa fa-home'},
                     {title: '按钮标签', to: '/button', icon: 'fa fa-hand-o-up', children: [
                         {title: '按钮', to: '/button'},
-                        {title: '标签', to: '/label'}
+                        {title: '标签', to: '/span'}
                     ]},
-                    {title: '文本表单', to: '/button', icon: 'fa fa-align-left'},
+                    {title: '文本表单', to: '/', icon: 'fa fa-align-left', children: [
+                        {title: '表单', to: '/form'},
+                        {title: '表格', to: '/table'}
+                    ]},
                     {title: '弹框提醒', to: '/', icon: 'fa fa-arrows-alt'},
                     {title: '加载动画', to: '', icon: 'fa fa-hourglass-half'}
             ]

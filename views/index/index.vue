@@ -1,6 +1,6 @@
 <template>
     <div class="init-page">
-        <table border="0">
+        <table class="table" border="0">
             <thead>
                 <th>订单编号</th>
                 <th>成交时间</th>
