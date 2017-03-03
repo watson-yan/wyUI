@@ -68,7 +68,7 @@
 					:class="{'btn-item': true, 'active': currentNum == item}">{{item}}</li>
 			</ul>
 			<div v-if="showLast">
-				<span>&nbsp;...&nbsp;<span>
+				<span>&nbsp;...&nbsp;</span>
 				<button @click="choose(totalPagesNum)" class="btn-item">{{totalPagesNum}}</button>
 			</div>
 			<button v-if="currentNum != totalPagesNum" @click="next">下一页</button>

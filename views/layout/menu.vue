@@ -1,10 +1,10 @@
 <template>
     <div class="side-menu">
         <h4 class="menu-title detail" v-if="mode=='detail'">
-            网站导航 <a @click="mode='brief'" class="fa fa-outdent" aria-hidden="true"></i>
+            网站导航 <i @click="mode='brief'" class="fa fa-outdent" aria-hidden="true"></i>
         </h4>
         <h4 class="menu-title brief" v-if="mode=='brief'">
-            &nbsp;<a @click="mode='detail'" class="fa fa-indent" aria-hidden="true"></i>
+            &nbsp;<i @click="mode='detail'" class="fa fa-indent" aria-hidden="true"></i>
         </h4>
         <ul v-if="mode=='detail'" class="detail">
             <li v-for="item in list">
