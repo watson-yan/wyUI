@@ -11,9 +11,9 @@ const store = new Vuex.Store({
             {id: '002', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
             {id: '003', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
             {id: '004', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
-            // {id: '005', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
-            // {id: '006', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
-            // {id: '007', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
+            {id: '005', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
+            {id: '006', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
+            {id: '007', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' },
         ]
     },
     mutations: {

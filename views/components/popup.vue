@@ -8,7 +8,7 @@
                 {{msg}}
             </div>
             <div slot="footer">
-                <button class="button primary shadow">确定</button>
+                <button @click="callback" class="button primary shadow">确定</button>
             </div>
         </modal>
         <modal v-if="mode == 'CONFIRM'" :show="showModal">
@@ -20,7 +20,7 @@
             </div>
             <div slot="footer">
                 <button class="button shadow">取消</button>
-                <button class="button primary shadow">确定</button>
+                <button @click="callback" class="button primary shadow">确定</button>
             </div>
         </modal>
     </div>
@@ -49,6 +49,12 @@
         data() {
             return {
                 showModal: true
+            }
+        },
+        methods: {
+            callback() {
+                this.cb()
+                this.showModal = false
             }
         }
     }

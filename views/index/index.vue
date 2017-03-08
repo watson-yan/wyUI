@@ -44,6 +44,13 @@
             <button class="button danger shadow">中</button>
             <button class="button primary shadow">中</button>
             <button @click="alertMsg" class="button big info">大</button>
+
+            <section>
+                <input type="checkbox" value='1' v-model='choose'>
+                <input type="checkbox" value='2' v-model='choose'>
+                <input type="checkbox" value='3' v-model='choose'>
+                <input type="checkbox" value='4' v-model='choose'>
+            </section>
         </div>
     </div>
 </template>
@@ -55,7 +62,8 @@
     export default {
         data() {
             return {
-                showModal: false
+                showModal: false,
+                choose: []
             }
         },
         computed: {

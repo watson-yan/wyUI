@@ -8,11 +8,11 @@ import Table from '../views/demo/table.vue'
 import Form from '../views/demo/form.vue'
 
 const routes = [
-    {path: '/', component: Index},
-    {path: '/button', component: Button},
-    {path: '/span', component: Span},
-    {path: '/table', component: Table},
-    {path: '/form', component: Form}
+    {path: '/', name:'主页', component: Index},
+    {path: '/button', name:'按钮', component: Button},
+    {path: '/span', name:'标签', component: Span},
+    {path: '/table', name:'表格', component: Table},
+    {path: '/form', name:'表单', component: Form}
 ]
 
 Vue.use(VueRouter)

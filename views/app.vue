@@ -33,7 +33,6 @@
 <style lang="sass" src="./app.scss"></style>
 <script>
     import leftMenu from './layout/menu.vue'
-    import popup from './layout/popup.vue'
 
     export default {
         data() {
@@ -54,6 +53,9 @@
                 }
             }
         },
+        created() {
+            console.log('init')
+        },
         methods: {
             setTitle(val) {
                 document.title = val || ''
@@ -70,8 +72,7 @@
             }
         },
         components: {
-            leftMenu,
-            popup
+            leftMenu
         }
     }
 </script>

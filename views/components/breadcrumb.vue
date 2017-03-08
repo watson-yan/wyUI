@@ -30,6 +30,16 @@ export default {
     },
     data() {
         return {}
+    },
+    watch: {
+        '$route': {
+            handler(newVal) {
+                console.warn(newVal)
+            }
+        }
+    },
+    created() {
+        console.warn('123')
     }
 }
 </script>
