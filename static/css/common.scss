@@ -23,6 +23,14 @@ html, body {
     color: $color
 }
 
+@mixin input-Underline($color) {
+    border: none;
+    border-bottom: 1px solid $color;
+    border-radius: none;
+    outline: none;
+}
+
+
 // 颜色
 $primary: #007ACC;
 $info: #00b4aa;
@@ -34,7 +42,7 @@ $border: 1px solid #ddd;
 
 
 /*
-** 布局部分
+** 布局部分, 采用栅格布局 将每个flex类分为10个栅格
 ** 采用flex布局
 */
 .flex {
@@ -181,17 +189,48 @@ pre {
 /*
 ** 输入框部分
 */
-input {
-    padding: 2px 5px;
-    &.underline {
-        border: none;
-        border-bottom: 1px solid #ddd;
-        border-radius: none;
+input[type='text'], 
+input[type='password'],
+input[type='email'],
+input[type='url'] {
+    -webkit-appearance: none;
+    height: 26px;
+    border: 1px solid #BFCBD7;
+    &:hover {
+        border: 1px solid #999;
+    }
+    &:focus{
+        border: 1px solid #20a0ff;
         outline: none;
     }
 }
-input[type='text'], input[type='password'] {
 
+input {
+    padding: 2px 5px;
+    &.input {
+        border-radius: 2px;
+    }
+    &.underline {
+       @include input-Underline(#BFCBD7);
+        &:hover {
+            @include input-Underline(#999);
+        }
+        &:focus {
+            @include input-Underline(#20a0ff);
+            outline: none;
+        }
+    }
+}
+
+textarea {
+    -webkit-appearance: none;
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px solid #BFCBD7;
+    &:focus {
+        border: 1px solid #20a0ff;
+        outline: none;
+    }
 }
 
 
@@ -303,7 +342,7 @@ table {
         border-bottom: 1px solid #ddd;
     }
     .form-group {
-        margin: 8px 0px;
+        margin: 14px 0px;
         &.item {
             display: flex;
             label {
