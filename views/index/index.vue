@@ -46,7 +46,7 @@
             <button @click="alertMsg" class="button big info">大</button>
             <br>
             <br>
-        
+            <!--<wy-table></wy-table>-->
         </div>
     </div>
 </template>

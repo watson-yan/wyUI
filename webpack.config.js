@@ -17,11 +17,56 @@ module.exports = {
    // 加载器配置
    module: {
        rules: [
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.scss$/, loader: '!style-loader!css-loader!sass-loader'},
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
-            { test: /\.vue$/, loader: 'vue-loader'},
-            { test: /\.js$/, exclude: /node_modules/,  loader: 'babel-loader'},
+            { 
+                test: /\.css$/, 
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader:'postcss-loader',
+                        options: {
+                            plugins: function() {
+                                return [
+                                    require('precss'),
+                                    require('autoprefixer')
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            { 
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader:'postcss-loader',
+                        options: {
+                            plugins: function() {
+                                return [
+                                    require('precss'),
+                                    require('autoprefixer')
+                                ]
+                            }
+                        }
+                    },
+                    'sass-loader'
+                ]
+            },
+            { 
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=8192'
+            },
+            { 
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+            { 
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
        ]   
    }
 }

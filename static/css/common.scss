@@ -193,6 +193,7 @@ input[type='text'],
 input[type='password'],
 input[type='email'],
 input[type='url'] {
+    -moz-appearance: none;
     -webkit-appearance: none;
     height: 26px;
     border: 1px solid #BFCBD7;
@@ -202,6 +203,31 @@ input[type='url'] {
     &:focus{
         border: 1px solid #20a0ff;
         outline: none;
+    }
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0px 8px;
+    height: 32px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #BFCBD7;
+    border-radius: 2px;
+    &:hover {
+        border: 1px solid #999;
+    }
+    &:focus{
+        border: 1px solid #20a0ff;
+        outline: none;
+    }
+    &:after {
+        content: ' ';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: #007ACC;
     }
 }
 
@@ -276,6 +302,9 @@ textarea {
        &:hover {
            box-shadow: 0px 2px 4px #777;
        }
+    }
+    &::focus {
+        outline: none;
     }
 }
 

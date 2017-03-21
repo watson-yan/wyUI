@@ -1,0 +1,32 @@
+// 扩展
+
+.input-icon {
+    display: flex;
+    margin-bottom: 15px;
+    .icon-right{
+        border-radius: 2px 0px 0px 2px;
+    }
+    .icon-left {
+        border-radius: 0px 2px 2px 0px;
+    }
+    section {
+        height: 30px;
+        width: 30px;
+        border: 1px solid #BFCBD7;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        background: #ddd;
+        cursor: pointer;
+    }
+    .icon-box {
+        &.left {
+            border-width: 1px 0px 1px 1px;
+            border-radius: 2px 0px 0px 2px;
+        }
+        &.right {
+            border-width: 1px 1px 1px 0px;
+            border-radius: 0px 2px 2px 0px;
+        }
+    }
+}

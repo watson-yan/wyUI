@@ -36,12 +36,12 @@
 			display: inline;
 			padding-left: 0;
 			list-style: none;
-
 			li.btn-item {
 				float: left;
 				padding: 5px 10px;
 				margin: 0px 3px;
-				border: 1px solid #e5e5e5;
+				border: 1px solid #fff;
+				box-shadow: 0 2px 3px #666;
 				cursor: pointer;
 				color: #666;
 				border-radius: 10%;
@@ -53,14 +53,18 @@
 				}
 			}
 		}
+		.pager-pre,.pager-next {
+			border: 1px solid #fff;
+			box-shadow: 0 2px 3px #666;
+		}
 	}
 </style>
 <template>
 	<div class="wy-pager">
 		<div>
-			<button v-if="currentNum!=1" @click="pre">上一页</button>	
+			<button class="pager-pre" v-if="currentNum!=1" @click="pre">上一页</button>	
 			<div v-if="showFirst" >
-				<button @click="choose(1)" class="btn-item">1</button>
+				<button @click="choose(1)" class="btn-item pager-pre">1</button>
 				<span>&nbsp;...&nbsp;</span> 
 			</div>
 			<ul class="pager-btn-group">
@@ -69,9 +73,9 @@
 			</ul>
 			<div v-if="showLast">
 				<span>&nbsp;...&nbsp;</span>
-				<button @click="choose(totalPagesNum)" class="btn-item">{{totalPagesNum}}</button>
+				<button @click="choose(totalPagesNum)" class="btn-item pager-next">{{totalPagesNum}}</button>
 			</div>
-			<button v-if="currentNum != totalPagesNum" @click="next">下一页</button>
+			<button class="pager-next" v-if="currentNum != totalPagesNum" @click="next">下一页</button>
 		</div>
 	</div>
 </template>
