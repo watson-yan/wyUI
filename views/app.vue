@@ -53,6 +53,9 @@
                     this.popup.cb = option.cb
                 }
                 this.showModal = true
+            },
+            show() {
+                console.warn('hello')
             }
         },
         components: {

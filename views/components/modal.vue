@@ -1,14 +1,14 @@
 <template>
-    <div v-if="showModal" class="wy-modal">
+    <div v-if="show" class="wy-modal">
         <div v-if="!hideMask" class="wy-modal-mask"></div>
         <div v-bind:style="{ width: w + 'px', height: h + 'px' }" class="wy-modal-body">
             <header>
-                <span @click="close" class="close">+</span>
                 <slot name="header"></slot>
+                <span @click="closeModal" class="close">x</span>
             </header>
-            <main>
+            <div class="main">
                 <slot></slot>
-            </main>
+            </div>
             <footer>
                 <slot name="footer"></slot>
             </footer>
@@ -18,14 +18,9 @@
 <script>
     export default {
         props: {
-            show: {
-                type: Boolean,
-                default: false
-            },
-            // 是否隐藏遮罩层
-            hideMask: {
-                type: Boolean,
-                default: false
+            close: {
+                type: Function,
+                required: true
             },
             w: {
                 type: Number,
@@ -34,24 +29,20 @@
             h: {
                 type: Number,
                 default: 200
+            },
+            hideMask: {
+                type: Boolean,
+                default: false
             }
         },
         data() {
             return {
-                showModal: false
+                show: true
             }
-        },
-        watch: {
-            show(newVal) {
-                this.showModal = newVal
-            }
-        },
-        created() {
-            this.showModal = this.show
         },
         methods: {
-            close() {
-                this.$parent.showModal = false
+            closeModal() {
+                this.close()
             }
         }
     }
@@ -76,29 +67,34 @@
             top: 40%;
             transform: translate(-50%, -50%);
             background: #fff;
+            border-radius: 4px;
             z-index: 100;
             &>header {
                 position: relative;
-                padding: 0px 10px;
+                padding: 0px 40px 0px 10px;
                 flex-grow: 0;
                 border-bottom: 1px solid #ddd;
                 .close {
                     position: absolute;
-                    right: -9px;
-                    top: -9px;
-                    width: 18px;
-                    height: 18px;
-                    line-height: 18px;
-                    color: #fff;
-                    background: rgba(0,0,0,0.8);
+                    width: 40px;
+                    right: 0px;
+                    top: 0px;
+                    background: #f0f0f0;
                     text-align: center;
                     cursor: pointer;
-                    border-radius: 100%;
-                    transform: rotate(45deg)
+                    &:hover {
+                        background: #007ACC;
+                        color: #fff;
+                    }
                 }
             }
-            &>main{
+            &>.main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-grow: 1;
+                padding: 10px;
+                overflow-y: auto;
             }
             &>footer {
                 flex-grow: 0;

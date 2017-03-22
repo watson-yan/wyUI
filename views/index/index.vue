@@ -25,28 +25,10 @@
         </div>
 
         <div>
-            <button @click="showModal = !showModal">模态框</button>
-            <modal :show="showModal">
-                <div slot="header">
-                    <p class="clear-margin" style="line-height: 40px;">这里是头部11</p>
-                </div>
-                <div slot="footer">
-                    <p class="clear-margin" style="padding: 10px 0px; text-align:right;">
-                        <button class="button shadow">取消</button>
-                        <button class="button primary shadow">确定</button>
-                    </p>
-                </div>
-            </modal>
-
-
-            <button class="button small">小</button>
-            <button class="button shadow">中</button>
-            <button class="button danger shadow">中</button>
-            <button class="button primary shadow">中</button>
-            <button @click="alertMsg" class="button big info">大</button>
+            <button @click="alertMsg" class="button big info">消息列表</button>
+            <button @click="confirmMsg" class="button big danger">确认框</button>
             <br>
             <br>
-            <!--<wy-table></wy-table>-->
         </div>
     </div>
 </template>
@@ -70,8 +52,18 @@
         },
         methods: {
             alertMsg() {
-                this.$root.msg = 123
-                console.warn(this.$root)
+                this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000})
+                this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000})
+                this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000})
+            },
+            confirmMsg() {
+                this.$plugins.Popup.confirm({
+                    title: '删除提示',
+                    text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。这个方法主要用于避开 Vue 不能检测属性被添加的限制。',
+                    cb: () => {
+                        this.$plugins.Popup.alert('删除成功!')
+                    }
+                })
             }
         }
     }

@@ -189,7 +189,7 @@
                         {title: '表单', to: '/form'},
                         {title: '表格', to: '/table'}
                     ]},
-                    {title: '弹框提醒', to: '/', icon: 'fa fa-arrows-alt'},
+                    {title: '弹框提醒', to: '/popup', icon: 'fa fa-arrows-alt'},
                     {title: '加载动画', to: '', icon: 'fa fa-hourglass-half'}
             ]
         },

@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import Alert from './popop/alert.vue'
+import Popup from './popop/index.js'
 
 export default {
-    Alert
+    Popup
 }
+
 
