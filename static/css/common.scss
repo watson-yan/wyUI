@@ -9,13 +9,29 @@ html, body {
 */
 
 // 标签的伪元素箭头
-@mixin arrow($color) {
+@mixin arrow-left($color) {
     display: block;
     content: ' ';
     position: absolute;
+    width: 0px;
+    height: 0px;
+    left: -24px;
     top: 0;
-    background: $color;
-    transform: rotate(45deg);
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 24px solid $color;
+}
+@mixin arrow-right($color) {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    right: -24px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 24px solid $color;
 }
 
 // 文本颜色生成器
@@ -149,29 +165,76 @@ span {
         padding: 2px 5px;
         border-radius: 3px;
         background: #e0e0e0;
-    }
-
-    &.left {
-        position: relative;
-        &::before {
-            display: block;
-            @include arrow(#e0e0e0);
+        &.arrow-left {
+            position: relative;
+            border-radius: 0px 3px 3px 0px;
+            &::before {
+                @include arrow-left(#e0e0e0);
+            }
+        }
+        &.arrow-right {
+            position: relative;
+            border-radius: 3px 0px 0px 3px;
+            &::after {
+                @include arrow-right(#e0e0e0)
+            }
         }
     }
-
     &.primary {
         color: #fff;
         background: $primary;
+        &.arrow-left {
+            position: relative;
+            border-radius: 0px 3px 3px 0px;
+            &::before {
+                @include arrow-left($primary);
+            }
+        }
+        &.arrow-right {
+            position: relative;
+            border-radius: 3px 0px 0px 3px;
+            &::after {
+                @include arrow-right($primary)
+            }
+        }
     }
 
     &.info {
         color: #fff;
         background: $info;
+        &.arrow-left {
+            position: relative;
+            border-radius: 0px 3px 3px 0px;
+            &::before {
+                @include arrow-left($info);
+            }
+        }
+        &.arrow-right {
+            position: relative;
+            border-radius: 3px 0px 0px 3px;
+            &::after {
+                @include arrow-right($info)
+            }
+        }
     }
 
     &.danger {
         color: #fff;
         background: $danger;
+        &.arrow-left {
+            position: relative;
+            border-radius: 0px 3px 3px 0px;
+            &::before {
+                @include arrow-left($danger);
+            }
+        }
+        &.arrow-right {
+            position: relative;
+            border-radius: 3px 0px 0px 3px;
+            &::after {
+                @include arrow-right($danger)
+            }
+        }
     }
 }
 

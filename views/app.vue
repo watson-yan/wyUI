@@ -18,43 +18,27 @@
         </header>
         <article>
             <div class="app-left">
-                <left-menu></left-menu>
+                <nav-menu></nav-menu>
             </div>
             <div class="app-right">
-                <breadcrumb :routes="routes"></breadcrumb>
+                <!--<breadcrumb :routes="routes"></breadcrumb>-->
                 <div class="app-content">
                     <router-view></router-view>
                 </div>
             </div>
         </article>
-        <popup v-if="showModal"></popup>
     </div>
 </template>
 <style lang="sass" src="./app.scss"></style>
 <script>
-    import leftMenu from './layout/menu.vue'
+    import navMenu from './layout/menu.vue'
 
     export default {
         data() {
             return {
-                routes: {
-                    to: '/',
-                    name: '面板首页',
-                    child: {
-                        to: '/me',
-                        name: '个人中心'
-                    }
-                },
-                showModal: false,   // 控制弹出框
-                popup: {            // 弹出框参数
-                    title: '',
-                    msg: '',
-                    cb: null
-                }
             }
         },
         created() {
-            console.log('init')
         },
         methods: {
             setTitle(val) {
@@ -72,7 +56,7 @@
             }
         },
         components: {
-            leftMenu
+            navMenu
         }
     }
 </script>

@@ -10,6 +10,7 @@ import components from './views/components/index.js' // 公共组件
 Vue.use(components)
 Vue.use(Vuex)
 
+
 const app = new Vue({
     el: '#app',
     router,

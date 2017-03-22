@@ -70,14 +70,8 @@
         },
         methods: {
             alertMsg() {
-                console.log(this.$root)
-                this.$root.alert({
-                    title: '提示',
-                    msg: '你知道了吗?',
-                    cb() {
-                        return;
-                    }
-                })
+                this.$root.msg = 123
+                console.warn(this.$root)
             }
         }
     }
