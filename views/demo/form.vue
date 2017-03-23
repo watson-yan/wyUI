@@ -103,6 +103,28 @@
             </section>
             <input class="input icon-left" type="text" style="width: 300px;">
         </div>
+
+        <p>使用方式：</p>
+        <pre>
+&lt;div class="input-icon"&gt;
+    &lt;input class="input icon-right" type="text" style="width: 300px;"&gt;
+    &lt;section class="icon-box right"&gt;
+        &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+&lt;div class="input-icon"&gt;
+    &lt;section class="icon-box left"&gt;
+        &lt;i class="fa fa-envelope"&gt;&lt;/i&gt;
+    &lt;/section&gt;
+    &lt;input class="input icon-left" type="text" style="width: 300px;"&gt;
+&lt;/div&gt;
+&lt;div class="input-icon"&gt;
+    &lt;section class="icon-box left"&gt;
+        &lt;i class="fa fa-phone"&gt;&lt;/i&gt;
+    &lt;/section&gt;
+    &lt;input class="input icon-left" type="text" style="width: 300px;"&gt;
+&lt;/div&gt;
+        </pre>
     </article>
 </template>
 <script>

@@ -10863,7 +10863,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = {
 	props: {
@@ -11376,6 +11375,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     data() {
@@ -11390,24 +11411,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -12753,7 +12756,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.wy-pager {\n  text-align: center;\n}\n.wy-pager > div {\n    display: inline-block;\n}\n.wy-pager > div > button, .wy-pager > div div {\n      float: left;\n      display: inline-block;\n}\n.wy-pager > div > div span {\n      margin: 0 3px;\n}\n.wy-pager > div::after {\n      content: '';\n      display: block;\n      height: 0;\n      clear: both;\n      visibility: hidden;\n      line-height: 0;\n      font-size: 0;\n}\n.wy-pager button {\n    margin: 0px 3px;\n    padding: 5px 10px;\n    color: #666;\n    background: #fff;\n    border: 1px solid #e5e5e5;\n    border-radius: 5px;\n    outline: none;\n    cursor: pointer;\n}\n.wy-pager .pager-btn-group {\n    display: inline;\n    padding-left: 0;\n    list-style: none;\n}\n.wy-pager .pager-btn-group li.btn-item {\n      float: left;\n      padding: 5px 10px;\n      margin: 0px 3px;\n      border: 1px solid #fff;\n      box-shadow: 0 2px 3px #666;\n      cursor: pointer;\n      color: #666;\n      border-radius: 10%;\n}\n.wy-pager .pager-btn-group li.btn-item.active {\n        color: #fff;\n        background: #007ACC;\n        border: 1px solid #007abb;\n        box-shadow: 0 2px 3px #666;\n}\n.wy-pager .pager-pre, .wy-pager .pager-next {\n    border: 1px solid #fff;\n    box-shadow: 0 2px 3px #666;\n}\n", ""]);
+exports.push([module.i, "\n.wy-pager {\n  text-align: center;\n}\n.wy-pager > div {\n    display: inline-block;\n}\n.wy-pager > div > button, .wy-pager > div div {\n      float: left;\n      display: inline-block;\n}\n.wy-pager > div > div span {\n      margin: 0 3px;\n}\n.wy-pager > div::after {\n      content: '';\n      display: block;\n      height: 0;\n      clear: both;\n      visibility: hidden;\n      line-height: 0;\n      font-size: 0;\n}\n.wy-pager button {\n    margin: 0px 3px;\n    padding: 5px 10px;\n    color: #666;\n    background: #fff;\n    border: 1px solid #e5e5e5;\n    outline: none;\n    cursor: pointer;\n}\n.wy-pager .pager-btn-group {\n    display: inline;\n    padding-left: 0;\n    list-style: none;\n}\n.wy-pager .pager-btn-group li.btn-item {\n      float: left;\n      padding: 5px 10px;\n      margin: 0px 3px;\n      border: 1px solid #fff;\n      box-shadow: 0 2px 3px #666;\n      cursor: pointer;\n      color: #666;\n}\n.wy-pager .pager-btn-group li.btn-item.active {\n        color: #fff;\n        background: #007ACC;\n        border: 1px solid #007abb;\n        box-shadow: 0 2px 3px #666;\n}\n.wy-pager .pager-pre, .wy-pager .pager-next {\n    color: #007abb;\n    border: 1px solid #007abb;\n    /* box-shadow: 0 2px 3px #666; */\n}\n", ""]);
 
 // exports
 
@@ -12809,7 +12812,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -13949,7 +13952,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.choose(1)
       }
     }
-  }, [_vm._v("1")]), _vm._v(" "), _c('span', [_vm._v(" ... ")])]) : _vm._e(), _vm._v(" "), _c('ul', {
+  }, [_vm._v("1")]), _vm._v(" "), _c('span', [_vm._v(" ··· ")])]) : _vm._e(), _vm._v(" "), _c('ul', {
     staticClass: "pager-btn-group"
   }, _vm._l((_vm.pagerList), function(item) {
     return _c('li', {
@@ -13965,7 +13968,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     }, [_vm._v(_vm._s(item))])
-  })), _vm._v(" "), (_vm.showLast) ? _c('div', [_c('span', [_vm._v(" ... ")]), _vm._v(" "), _c('button', {
+  })), _vm._v(" "), (_vm.showLast) ? _c('div', [_c('span', [_vm._v(" ··· ")]), _vm._v(" "), _c('button', {
     staticClass: "btn-item pager-next",
     on: {
       "click": function($event) {
@@ -14140,38 +14143,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.setLoding
     }
-  }, [_vm._v("loading")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\nsetLoding() {\n    this.$plugins.Loading.show()\n    setTimeout(() => {\n        this.$plugins.Loading.close()\n    }, 5000)\n}\n        ")]), _vm._v(" "), _c('h4', {
-    staticClass: "title"
-  }, [_vm._v("箭头标签")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<span class=\"span arrow-left\">default</span>\n<span class=\"span primary arrow-right\">primary</span>\n<span class=\"span info arrow-left\">info</span>\n<span class=\"span danger arrow-right\">danger</span>\n        ")])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "margin-bottom": "20px"
-    }
-  }, [_c('span', {
-    staticClass: "span arrow-left",
-    staticStyle: {
-      "margin": "0px 25px"
-    }
-  }, [_vm._v("default")]), _vm._v(" "), _c('span', {
-    staticClass: "span primary arrow-right",
-    staticStyle: {
-      "margin": "0px 25px"
-    }
-  }, [_vm._v("primary")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('span', {
-    staticClass: "span info arrow-left",
-    staticStyle: {
-      "margin": "0px 25px"
-    }
-  }, [_vm._v("info")]), _vm._v(" "), _c('span', {
-    staticClass: "span danger arrow-right",
-    staticStyle: {
-      "margin": "0px 25px"
-    }
-  }, [_vm._v("danger")])])
-}]}
+  }, [_vm._v("loading")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\nsetLoding() {\n    this.$plugins.Loading.show()\n    setTimeout(() => {\n        this.$plugins.Loading.close()\n    }, 5000)\n}\n        ")])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -14394,12 +14367,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "radio",
       "name": "gender"
     }
-  }), _vm._v(" 男 \n                        "), _c('input', {
+  }), _vm._v(" 男 \n                            "), _c('input', {
     attrs: {
       "type": "radio",
       "name": "gender"
     }
-  }), _vm._v(" 女 \n                    ")])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" 女 \n                        ")])]), _vm._v(" "), _c('div', {
     staticClass: "form-group item"
   }, [_c('label', {
     attrs: {
@@ -14409,23 +14382,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "checkbox"
     }
-  }), _vm._v(" 乒乓球 \n                        "), _c('input', {
+  }), _vm._v(" 乒乓球 \n                            "), _c('input', {
     attrs: {
       "type": "checkbox"
     }
-  }), _vm._v(" 羽毛球 \n                        "), _c('input', {
+  }), _vm._v(" 羽毛球 \n                            "), _c('input', {
     attrs: {
       "type": "checkbox"
     }
-  }), _vm._v(" 篮球 \n                        "), _c('input', {
+  }), _vm._v(" 篮球 \n                            "), _c('input', {
     attrs: {
       "type": "checkbox"
     }
-  }), _vm._v(" 足球 \n                        "), _c('input', {
+  }), _vm._v(" 足球 \n                            "), _c('input', {
     attrs: {
       "type": "checkbox"
     }
-  }), _vm._v(" 网球 \n                    ")])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" 网球 \n                        ")])]), _vm._v(" "), _c('div', {
     staticClass: "form-group item"
   }, [_c('label', {
     staticStyle: {
@@ -14563,7 +14536,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text"
     }
-  })])])
+  })]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<div class=\"input-icon\">\n    <input class=\"input icon-right\" type=\"text\" style=\"width: 300px;\">\n    <section class=\"icon-box right\">\n        <i class=\"fa fa-search\"></i>\n    </section>\n</div>\n<div class=\"input-icon\">\n    <section class=\"icon-box left\">\n        <i class=\"fa fa-envelope\"></i>\n    </section>\n    <input class=\"input icon-left\" type=\"text\" style=\"width: 300px;\">\n</div>\n<div class=\"input-icon\">\n    <section class=\"icon-box left\">\n        <i class=\"fa fa-phone\"></i>\n    </section>\n    <input class=\"input icon-left\" type=\"text\" style=\"width: 300px;\">\n</div>\n        ")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

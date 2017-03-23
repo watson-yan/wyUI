@@ -28,7 +28,6 @@
 			color: #666;
 			background: #fff;
 			border: 1px solid #e5e5e5;
-			border-radius: 5px;
 			outline: none;
 			cursor: pointer;
 		}
@@ -44,7 +43,6 @@
 				box-shadow: 0 2px 3px #666;
 				cursor: pointer;
 				color: #666;
-				border-radius: 10%;
 				&.active {
 					color: #fff;
 					background: #007ACC;
@@ -54,8 +52,9 @@
 			}
 		}
 		.pager-pre,.pager-next {
-			border: 1px solid #fff;
-			box-shadow: 0 2px 3px #666;
+			color: #007abb;
+			border: 1px solid #007abb;
+			/* box-shadow: 0 2px 3px #666; */
 		}
 	}
 </style>
@@ -65,14 +64,14 @@
 			<button class="pager-pre" v-if="currentNum!=1" @click="pre">上一页</button>	
 			<div v-if="showFirst" >
 				<button @click="choose(1)" class="btn-item pager-pre">1</button>
-				<span>&nbsp;...&nbsp;</span> 
+				<span>&nbsp;···&nbsp;</span> 
 			</div>
 			<ul class="pager-btn-group">
 				<li v-for="item in pagerList" @click="choose(item)"  track-by="$index"
 					:class="{'btn-item': true, 'active': currentNum == item}">{{item}}</li>
 			</ul>
 			<div v-if="showLast">
-				<span>&nbsp;...&nbsp;</span>
+				<span>&nbsp;···&nbsp;</span>
 				<button @click="choose(totalPagesNum)" class="btn-item pager-next">{{totalPagesNum}}</button>
 			</div>
 			<button class="pager-next" v-if="currentNum != totalPagesNum" @click="next">下一页</button>
