@@ -27,6 +27,7 @@
         <div>
             <button @click="alertMsg" class="button big info">消息列表</button>
             <button @click="confirmMsg" class="button big danger">确认框</button>
+            <button @click="setLoding" class="button big primary">loading</button>
             <br>
             <br>
         </div>
@@ -64,6 +65,12 @@
                         this.$plugins.Popup.alert('删除成功!')
                     }
                 })
+            },
+            setLoding() {
+                this.$plugins.Loading.show()
+                setTimeout(() => {
+                    this.$plugins.Loading.close()
+                }, 5000)
             }
         }
     }

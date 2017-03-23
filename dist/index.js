@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 93);
+/******/ 	return __webpack_require__(__webpack_require__.s = 104);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -195,7 +195,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(91)
+var listToStyles = __webpack_require__(102)
 
 /*
 type StyleObject = {
@@ -7118,7 +7118,7 @@ setTimeout(function () {
 
 /* harmony default export */ __webpack_exports__["a"] = Vue$2;
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7), __webpack_require__(92)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7), __webpack_require__(103)))
 
 /***/ }),
 /* 4 */
@@ -7126,13 +7126,13 @@ setTimeout(function () {
 
 
 /* styles */
-__webpack_require__(90)
+__webpack_require__(101)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(15),
   /* template */
-  __webpack_require__(75),
+  __webpack_require__(84),
   /* scopeId */
   null,
   /* cssModules */
@@ -10451,18 +10451,20 @@ process.umask = function() { return 0; };
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_index_index_vue__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_index_index_vue__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_index_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_index_index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_demo_button_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_demo_button_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_demo_button_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_demo_button_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_demo_span_vue__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_demo_span_vue__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_demo_span_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_demo_span_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_demo_table_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_demo_table_vue__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_demo_table_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_demo_table_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_demo_form_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_demo_form_vue__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_demo_form_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__views_demo_form_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_demo_popup_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_demo_popup_vue__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_demo_popup_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__views_demo_popup_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_demo_loading_vue__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_demo_loading_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__views_demo_loading_vue__);
 
 
 
@@ -10473,7 +10475,8 @@ process.umask = function() { return 0; };
 
 
 
-const routes = [{ path: '/', name: '主页', component: __WEBPACK_IMPORTED_MODULE_2__views_index_index_vue___default.a }, { path: '/button', name: '按钮', component: __WEBPACK_IMPORTED_MODULE_3__views_demo_button_vue___default.a }, { path: '/span', name: '标签', component: __WEBPACK_IMPORTED_MODULE_4__views_demo_span_vue___default.a }, { path: '/table', name: '表格', component: __WEBPACK_IMPORTED_MODULE_5__views_demo_table_vue___default.a }, { path: '/form', name: '表单', component: __WEBPACK_IMPORTED_MODULE_6__views_demo_form_vue___default.a }, { path: '/popup', name: '弹出框', component: __WEBPACK_IMPORTED_MODULE_7__views_demo_popup_vue___default.a }];
+
+const routes = [{ path: '/', name: '主页', component: __WEBPACK_IMPORTED_MODULE_2__views_index_index_vue___default.a }, { path: '/button', name: '按钮', component: __WEBPACK_IMPORTED_MODULE_3__views_demo_button_vue___default.a }, { path: '/span', name: '标签', component: __WEBPACK_IMPORTED_MODULE_4__views_demo_span_vue___default.a }, { path: '/table', name: '表格', component: __WEBPACK_IMPORTED_MODULE_5__views_demo_table_vue___default.a }, { path: '/form', name: '表单', component: __WEBPACK_IMPORTED_MODULE_6__views_demo_form_vue___default.a }, { path: '/popup', name: '弹出框', component: __WEBPACK_IMPORTED_MODULE_7__views_demo_popup_vue___default.a }, { path: '/loading', name: '加载动画', component: __WEBPACK_IMPORTED_MODULE_8__views_demo_loading_vue___default.a }];
 
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 const routers = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
@@ -10515,15 +10518,15 @@ const store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__breadcrumb_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagination_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagination_vue__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagination_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__pagination_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_vue__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__modal_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popup_vue__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popup_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popup_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__popup_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__table_vue__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__table_vue__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__table_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__table_vue__);
 
 
@@ -10548,12 +10551,15 @@ const store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__popop_index_js__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__popop_index_js__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__loading_index_js__ = __webpack_require__(31);
+
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = {
-    Popup: __WEBPACK_IMPORTED_MODULE_1__popop_index_js__["a" /* default */]
+    Popup: __WEBPACK_IMPORTED_MODULE_1__popop_index_js__["a" /* default */],
+    Loading: __WEBPACK_IMPORTED_MODULE_2__loading_index_js__["a" /* default */]
 };
 
 /***/ }),
@@ -10562,13 +10568,13 @@ const store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 
 
 /* styles */
-__webpack_require__(81)
+__webpack_require__(90)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(13),
   /* template */
-  __webpack_require__(65),
+  __webpack_require__(72),
   /* scopeId */
   null,
   /* cssModules */
@@ -10600,7 +10606,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_menu_vue__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_menu_vue__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_menu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layout_menu_vue__);
 //
 //
@@ -11408,6 +11414,74 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    data() {
+        return {};
+    },
+    created() {},
+    methods: {
+        setLoding() {
+            this.$plugins.Loading.show();
+            setTimeout(() => {
+                this.$plugins.Loading.close();
+            }, 5000);
+        }
+    }
+};
+
+/***/ }),
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     data() {
@@ -11426,12 +11500,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     this.$plugins.Popup.alert('删除成功!');
                 }
             });
+        },
+        messageBox() {
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000 });
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000 });
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000 });
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的4', duration: 10000 });
         }
     }
 };
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11481,7 +11561,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11782,11 +11862,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -11852,12 +11933,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     this.$plugins.Popup.alert('删除成功!');
                 }
             });
+        },
+        setLoding() {
+            this.$plugins.Loading.show();
+            setTimeout(() => {
+                this.$plugins.Loading.close();
+            }, 5000);
         }
     }
 };
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12043,7 +12130,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     created() {
-        this.list = [{ title: '综合首页', to: '/', icon: 'fa fa-home' }, { title: '按钮标签', to: '/button', icon: 'fa fa-hand-o-up', children: [{ title: '按钮', to: '/button' }, { title: '标签', to: '/span' }] }, { title: '文本表单', to: '/', icon: 'fa fa-align-left', children: [{ title: '表单', to: '/form' }, { title: '表格', to: '/table' }] }, { title: '弹框提醒', to: '/popup', icon: 'fa fa-arrows-alt' }, { title: '加载动画', to: '', icon: 'fa fa-hourglass-half' }];
+        this.list = [{ title: '综合首页', to: '/', icon: 'fa fa-home' }, { title: '按钮标签', to: '/button', icon: 'fa fa-hand-o-up', children: [{ title: '按钮', to: '/button' }, { title: '标签', to: '/span' }] }, { title: '文本表单', to: '/', icon: 'fa fa-align-left', children: [{ title: '表单', to: '/form' }, { title: '表格', to: '/table' }] }, { title: '弹框提醒', to: '/popup', icon: 'fa fa-arrows-alt' }, { title: '加载动画', to: '/loading', icon: 'fa fa-hourglass-half' }];
     },
     watch: {
         mode(newVal) {
@@ -12082,7 +12169,175 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 26 */
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    data() {
+        return {
+            show: false
+        };
+    }
+};
+
+/***/ }),
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12156,7 +12411,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12224,7 +12479,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12281,16 +12536,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_vue__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loading_vue__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loading_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__loading_vue__);
+
+
+
+const loadingBox = document.createElement('div');
+document.body.appendChild(loadingBox);
+
+const loadingComponent = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](__WEBPACK_IMPORTED_MODULE_1__loading_vue___default.a).$mount(loadingBox);
+const show = () => {
+    loadingComponent.show = true;
+};
+const close = () => {
+    loadingComponent.show = false;
+};
+
+/* harmony default export */ __webpack_exports__["a"] = {
+    show, close
+};
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_vue__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__alert_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_vue__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_vue__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__confirm_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__message_vue__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__message_vue__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__message_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__message_vue__);
 
 
@@ -12352,7 +12633,7 @@ const message = option => {
 };
 
 /***/ }),
-/* 30 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -12366,7 +12647,7 @@ exports.push([module.i, "\n.popup-confirm .content {\n  display: flex;\n  align-
 
 
 /***/ }),
-/* 31 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -12374,13 +12655,13 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -12394,7 +12675,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 33 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -12408,7 +12689,7 @@ exports.push([module.i, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n 
 
 
 /***/ }),
-/* 34 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -12422,57 +12703,15 @@ exports.push([module.i, "\n.popup-alert .content {\n  display: flex;\n  align-it
 
 
 /***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)();
-// imports
-exports.i(__webpack_require__(45), "");
-
-// module
-exports.push([module.i, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 杂项生成器\n*/\n/*\n** 布局部分, 采用栅格布局 将每个flex类分为10个栅格\n** 采用flex布局\n*/\n.flex {\n  display: flex;\n}\n.flex .col1 {\n    flex-grow: 1;\n}\n.flex .col2 {\n    flex-grow: 2;\n}\n.flex .col3 {\n    flex-grow: 3;\n}\n.flex .col4 {\n    flex-grow: 4;\n}\n.flex .col5 {\n    flex-grow: 5;\n}\n.flex .col6 {\n    flex-grow: 6;\n}\n.flex .col7 {\n    flex-grow: 7;\n}\n.flex .col8 {\n    flex-grow: 8;\n}\n.flex .col9 {\n    flex-grow: 9;\n}\n.flex .col10 {\n    flex-grow: 10;\n}\n.flex.column {\n    flex-direction: column;\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nspan.span {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nspan.span.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.span.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #e0e0e0;\n}\nspan.span.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.span.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #e0e0e0;\n}\nspan.primary {\n  color: #fff;\n  background: #007ACC;\n}\nspan.primary.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.primary.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #007ACC;\n}\nspan.primary.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.primary.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #007ACC;\n}\nspan.info {\n  color: #fff;\n  background: #00b4aa;\n}\nspan.info.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.info.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #00b4aa;\n}\nspan.info.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.info.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #00b4aa;\n}\nspan.danger {\n  color: #fff;\n  background: #f44336;\n}\nspan.danger.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.danger.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #f44336;\n}\nspan.danger.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.danger.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #f44336;\n}\nlabel {\n  align-self: center;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 输入框部分\n*/\ninput[type='text'],\ninput[type='password'],\ninput[type='email'],\ninput[type='url'] {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  height: 26px;\n  border: 1px solid #BFCBD7;\n}\ninput[type='text']:hover,\n  input[type='password']:hover,\n  input[type='email']:hover,\n  input[type='url']:hover {\n    border: 1px solid #999;\n}\ninput[type='text']:focus,\n  input[type='password']:focus,\n  input[type='email']:focus,\n  input[type='url']:focus {\n    border: 1px solid #20a0ff;\n    outline: none;\n}\nselect {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  padding: 0px 8px;\n  height: 32px;\n  border-radius: 2px;\n  background: #fff;\n  border: 1px solid #BFCBD7;\n  border-radius: 2px;\n}\nselect:hover {\n    border: 1px solid #999;\n}\nselect:focus {\n    border: 1px solid #20a0ff;\n    outline: none;\n}\nselect:after {\n    content: ' ';\n    display: inline-block;\n    width: 30px;\n    height: 30px;\n    background: #007ACC;\n}\ninput {\n  padding: 2px 5px;\n}\ninput.input {\n    border-radius: 2px;\n}\ninput.underline {\n    border: none;\n    border-bottom: 1px solid #BFCBD7;\n    border-radius: none;\n    outline: none;\n}\ninput.underline:hover {\n      border: none;\n      border-bottom: 1px solid #999;\n      border-radius: none;\n      outline: none;\n}\ninput.underline:focus {\n      border: none;\n      border-bottom: 1px solid #20a0ff;\n      border-radius: none;\n      outline: none;\n      outline: none;\n}\ntextarea {\n  -webkit-appearance: none;\n  padding: 4px;\n  border-radius: 2px;\n  border: 1px solid #BFCBD7;\n}\ntextarea:focus {\n    border: 1px solid #20a0ff;\n    outline: none;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #eee;\n  border-radius: 2px;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n.button::focus {\n    outline: none;\n}\n\n/*\n** 表格\n*/\ntable.table {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.table.primary thead {\n    color: #fff;\n    background-color: #007ACC;\n    background-image: linear-gradient(#5eb2ea, #007ACC);\n    border: 1px solid #5eb2ea;\n}\ntable.table th, table.table td {\n    border-collapse: collapse;\n}\ntable.table thead {\n    line-height: 30px;\n    border: 1px solid #ddd;\n    background-color: #eee;\n    background-image: linear-gradient(#fcfcfc, #eee);\n}\ntable.table thead th {\n      border: none;\n}\ntable.table tbody tr {\n    line-height: 32px;\n}\ntable.table tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable.table tbody tr.center td {\n      text-align: center;\n}\ntable.table-striped tbody tr:nth-child(2n) {\n  background: #f0f0f0;\n}\n\n/*\n** 表单部分\n*/\n.form .form-title {\n  margin: 8px 0px;\n  font-weight: 400;\n  border-bottom: 1px solid #ddd;\n}\n.form .form-group {\n  margin: 14px 0px;\n}\n.form .form-group.item {\n    display: flex;\n}\n.form .form-group.item label {\n      color: #444;\n      padding: 0px 5px;\n}\n.form .form-group.item input, .form .form-group.item textarea {\n      flex-grow: 1;\n}\n\n/**\n** 通用部分\n**/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.input-icon {\n  display: flex;\n  margin-bottom: 15px;\n}\n.input-icon .icon-right {\n    border-radius: 2px 0px 0px 2px;\n}\n.input-icon .icon-left {\n    border-radius: 0px 2px 2px 0px;\n}\n.input-icon section {\n    height: 30px;\n    width: 30px;\n    border: 1px solid #BFCBD7;\n    display: inline-block;\n    line-height: 30px;\n    text-align: center;\n    background: #ddd;\n    cursor: pointer;\n}\n.input-icon .icon-box.left {\n    border-width: 1px 0px 1px 1px;\n    border-radius: 2px 0px 0px 2px;\n}\n.input-icon .icon-box.right {\n    border-width: 1px 1px 1px 0px;\n    border-radius: 0px 2px 2px 0px;\n}\n.app {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.app > header {\n    flex-grow: 0;\n}\n.app > header nav {\n      height: 50px;\n      padding: 0px 30px;\n      line-height: 50px;\n      background: linear-gradient(to right, #1278f6, #00b4aa);\n}\n.app > header nav .logined-list {\n        margin: 0px;\n        padding-left: 0px;\n        list-style: none;\n}\n.app > header nav .logined-list li {\n          float: left;\n          padding: 0px 10px;\n}\n.app > article {\n    display: flex;\n    flex-grow: 1;\n}\n.app > article .app-left, .app > article .app-right {\n      display: inline-block;\n}\n.app > article .app-left {\n      flex-grow: 0;\n}\n.app > article .app-right {\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n}\n.app .app-content {\n    flex-grow: 1;\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 10px 0px 10px;\n    background: #e2e2e2;\n    overflow-y: auto;\n}\n.app .app-content .init-page {\n      padding: 10px;\n      background: #fff;\n      border: 1px solid #ececec;\n      box-shadow: 0 0 5px 5px #ececec;\n}\n.fade-enter-active, .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-active {\n  opacity: 0;\n}\n.slide-fade-enter-active {\n  transition: all .3s ease;\n}\n.slide-fade-leave-active {\n  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);\n}\n.slide-fade-enter, .slide-fade-leave-active {\n  transform: translateX(10px);\n  opacity: 0;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)();
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)();
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
 // imports
-
+exports.i(__webpack_require__(50), "");
 
 // module
-exports.push([module.i, "\n.wy-pager {\n  text-align: center;\n}\n.wy-pager > div {\n    display: inline-block;\n}\n.wy-pager > div > button, .wy-pager > div div {\n      float: left;\n      display: inline-block;\n}\n.wy-pager > div > div span {\n      margin: 0 3px;\n}\n.wy-pager > div::after {\n      content: '';\n      display: block;\n      height: 0;\n      clear: both;\n      visibility: hidden;\n      line-height: 0;\n      font-size: 0;\n}\n.wy-pager button {\n    margin: 0px 3px;\n    padding: 5px 10px;\n    color: #666;\n    background: #fff;\n    border: 1px solid #e5e5e5;\n    border-radius: 5px;\n    outline: none;\n    cursor: pointer;\n}\n.wy-pager .pager-btn-group {\n    display: inline;\n    padding-left: 0;\n    list-style: none;\n}\n.wy-pager .pager-btn-group li.btn-item {\n      float: left;\n      padding: 5px 10px;\n      margin: 0px 3px;\n      border: 1px solid #fff;\n      box-shadow: 0 2px 3px #666;\n      cursor: pointer;\n      color: #666;\n      border-radius: 10%;\n}\n.wy-pager .pager-btn-group li.btn-item.active {\n        color: #fff;\n        background: #007ACC;\n        border: 1px solid #007abb;\n        box-shadow: 0 2px 3px #666;\n}\n.wy-pager .pager-pre, .wy-pager .pager-next {\n    border: 1px solid #fff;\n    box-shadow: 0 2px 3px #666;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-size: 14px;\n  font-family: 'Microsoft Yahei';\n}\n\n/*\n** 杂项生成器\n*/\n/*\n** 布局部分, 采用栅格布局 将每个flex类分为10个栅格\n** 采用flex布局\n*/\n.flex {\n  display: flex;\n}\n.flex .col1 {\n    flex-grow: 1;\n}\n.flex .col2 {\n    flex-grow: 2;\n}\n.flex .col3 {\n    flex-grow: 3;\n}\n.flex .col4 {\n    flex-grow: 4;\n}\n.flex .col5 {\n    flex-grow: 5;\n}\n.flex .col6 {\n    flex-grow: 6;\n}\n.flex .col7 {\n    flex-grow: 7;\n}\n.flex .col8 {\n    flex-grow: 8;\n}\n.flex .col9 {\n    flex-grow: 9;\n}\n.flex .col10 {\n    flex-grow: 10;\n}\n.flex.column {\n    flex-direction: column;\n}\n\n/*\n** 链接部分\n*/\na {\n  cursor: pointer;\n}\na.primary {\n    color: #007ACC;\n}\na.no-decoration {\n    text-decoration: none;\n}\n\n/*\n** 文本部分\n*/\np.clear-margin {\n  margin: 0;\n}\n.text.white {\n  color: #fff;\n}\n.text.gray {\n  color: gray;\n}\n.text.small {\n  font-size: 12px;\n}\n.text.big {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2.5rem;\n}\nh2 {\n  font-size: 2.2rem;\n}\nh3 {\n  font-size: 1.9rem;\n}\nh4 {\n  font-size: 1.5rem;\n}\nh5 {\n  font-size: 1.2rem;\n}\nh1.title, h2.title, h3.title, h4.title, h5.title {\n  border-bottom: 1px solid #ddd;\n  padding-bottom: 5px;\n}\nspan.span {\n  padding: 2px 5px;\n  border-radius: 3px;\n  background: #e0e0e0;\n}\nspan.span.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.span.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #e0e0e0;\n}\nspan.span.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.span.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #e0e0e0;\n}\nspan.primary {\n  color: #fff;\n  background: #007ACC;\n}\nspan.primary.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.primary.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #007ACC;\n}\nspan.primary.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.primary.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #007ACC;\n}\nspan.info {\n  color: #fff;\n  background: #00b4aa;\n}\nspan.info.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.info.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #00b4aa;\n}\nspan.info.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.info.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #00b4aa;\n}\nspan.danger {\n  color: #fff;\n  background: #f44336;\n}\nspan.danger.arrow-left {\n    position: relative;\n    border-radius: 0px 3px 3px 0px;\n}\nspan.danger.arrow-left::before {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      left: -24px;\n      top: 0;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-right: 24px solid #f44336;\n}\nspan.danger.arrow-right {\n    position: relative;\n    border-radius: 3px 0px 0px 3px;\n}\nspan.danger.arrow-right::after {\n      display: block;\n      content: ' ';\n      position: absolute;\n      width: 0px;\n      height: 0px;\n      top: 0px;\n      right: -24px;\n      border-top: 12px solid transparent;\n      border-bottom: 12px solid transparent;\n      border-left: 24px solid #f44336;\n}\nlabel {\n  align-self: center;\n}\npre {\n  margin: 0;\n  padding: 10px;\n  color: #444;\n  background: #f0f0f0;\n}\n\n/*\n** 输入框部分\n*/\ninput[type='text'],\ninput[type='password'],\ninput[type='email'],\ninput[type='url'] {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  height: 26px;\n  border: 1px solid #BFCBD7;\n}\ninput[type='text']:hover,\n  input[type='password']:hover,\n  input[type='email']:hover,\n  input[type='url']:hover {\n    border: 1px solid #999;\n}\ninput[type='text']:focus,\n  input[type='password']:focus,\n  input[type='email']:focus,\n  input[type='url']:focus {\n    border: 1px solid #20a0ff;\n    outline: none;\n}\nselect {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  padding: 0px 8px;\n  height: 32px;\n  border-radius: 2px;\n  background: #fff;\n  border: 1px solid #BFCBD7;\n  border-radius: 2px;\n}\nselect:hover {\n    border: 1px solid #999;\n}\nselect:focus {\n    border: 1px solid #20a0ff;\n    outline: none;\n}\nselect:after {\n    content: ' ';\n    display: inline-block;\n    width: 30px;\n    height: 30px;\n    background: #007ACC;\n}\ninput {\n  padding: 2px 5px;\n}\ninput.input {\n    border-radius: 2px;\n}\ninput.underline {\n    border: none;\n    border-bottom: 1px solid #BFCBD7;\n    border-radius: none;\n    outline: none;\n}\ninput.underline:hover {\n      border: none;\n      border-bottom: 1px solid #999;\n      border-radius: none;\n      outline: none;\n}\ninput.underline:focus {\n      border: none;\n      border-bottom: 1px solid #20a0ff;\n      border-radius: none;\n      outline: none;\n      outline: none;\n}\ntextarea {\n  -webkit-appearance: none;\n  padding: 4px;\n  border-radius: 2px;\n  border: 1px solid #BFCBD7;\n}\ntextarea:focus {\n    border: 1px solid #20a0ff;\n    outline: none;\n}\n\n/*\n** 按钮部分\n*/\n.button {\n  padding: 7px 20px;\n  border: none;\n  cursor: pointer;\n  background: #eee;\n  border-radius: 2px;\n}\n.button.small {\n    font-size: 12px;\n    padding: 2px 12px;\n}\n.button.big {\n    padding: 11px 45px;\n}\n.button.primary {\n    color: #fff;\n    background: #007ACC;\n}\n.button.primary:hover {\n      background: #0771B9;\n}\n.button.danger {\n    color: #fff;\n    background: #f44336;\n}\n.button.danger:hover {\n      background: #f53c2e;\n}\n.button.info {\n    color: #fff;\n    background: #00b4aa;\n}\n.button.info:hover {\n      background: #04ada3;\n}\n.button.shadow {\n    box-shadow: 0px 2px 3px #999;\n}\n.button.shadow:hover {\n      box-shadow: 0px 2px 4px #777;\n}\n.button::focus {\n    outline: none;\n}\n\n/*\n** 表格\n*/\ntable.table {\n  width: 100%;\n  border-collapse: collapse;\n}\ntable.table.primary thead {\n    color: #fff;\n    background-color: #007ACC;\n    background-image: linear-gradient(#5eb2ea, #007ACC);\n    border: 1px solid #5eb2ea;\n}\ntable.table th, table.table td {\n    border-collapse: collapse;\n}\ntable.table thead {\n    line-height: 30px;\n    border: 1px solid #ddd;\n    background-color: #eee;\n    background-image: linear-gradient(#fcfcfc, #eee);\n}\ntable.table thead th {\n      border: none;\n}\ntable.table tbody tr {\n    line-height: 32px;\n}\ntable.table tbody tr td {\n      font-size: 12px;\n      border: 1px solid #ddd;\n}\ntable.table tbody tr.center td {\n      text-align: center;\n}\ntable.table-striped tbody tr:nth-child(2n) {\n  background: #f0f0f0;\n}\n\n/*\n** 表单部分\n*/\n.form .form-title {\n  margin: 8px 0px;\n  font-weight: 400;\n  border-bottom: 1px solid #ddd;\n}\n.form .form-group {\n  margin: 14px 0px;\n}\n.form .form-group.item {\n    display: flex;\n}\n.form .form-group.item label {\n      color: #444;\n      padding: 0px 5px;\n}\n.form .form-group.item input, .form .form-group.item textarea {\n      flex-grow: 1;\n}\n\n/**\n** 通用部分\n**/\n.pull-left {\n  float: left;\n}\n.pull-right {\n  float: right;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n  visibility: hidden;\n  line-height: 0;\n  height: 0;\n  font-size: 0;\n}\n.text-ellipsis {\n  word-break: break-all;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.input-icon {\n  display: flex;\n  margin-bottom: 15px;\n}\n.input-icon .icon-right {\n    border-radius: 2px 0px 0px 2px;\n}\n.input-icon .icon-left {\n    border-radius: 0px 2px 2px 0px;\n}\n.input-icon section {\n    height: 30px;\n    width: 30px;\n    border: 1px solid #BFCBD7;\n    display: inline-block;\n    line-height: 30px;\n    text-align: center;\n    background: #ddd;\n    cursor: pointer;\n}\n.input-icon .icon-box.left {\n    border-width: 1px 0px 1px 1px;\n    border-radius: 2px 0px 0px 2px;\n}\n.input-icon .icon-box.right {\n    border-width: 1px 1px 1px 0px;\n    border-radius: 0px 2px 2px 0px;\n}\n.app {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n.app > header {\n    flex-grow: 0;\n}\n.app > header nav {\n      height: 50px;\n      padding: 0px 30px;\n      line-height: 50px;\n      background: linear-gradient(to right, #1278f6, #00b4aa);\n}\n.app > header nav .logined-list {\n        margin: 0px;\n        padding-left: 0px;\n        list-style: none;\n}\n.app > header nav .logined-list li {\n          float: left;\n          padding: 0px 10px;\n}\n.app > article {\n    display: flex;\n    flex-grow: 1;\n}\n.app > article .app-left, .app > article .app-right {\n      display: inline-block;\n}\n.app > article .app-left {\n      flex-grow: 0;\n}\n.app > article .app-right {\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n}\n.app .app-content {\n    flex-grow: 1;\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 10px 0px 10px;\n    background: #e2e2e2;\n    overflow-y: auto;\n}\n.app .app-content .init-page {\n      padding: 10px;\n      background: #fff;\n      border: 1px solid #ececec;\n      box-shadow: 0 0 5px 5px #ececec;\n}\n.fade-enter-active, .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-active {\n  opacity: 0;\n}\n.slide-fade-enter-active {\n  transition: all .3s ease;\n}\n.slide-fade-leave-active {\n  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);\n}\n.slide-fade-enter, .slide-fade-leave-active {\n  transform: translateX(10px);\n  opacity: 0;\n}\n", ""]);
 
 // exports
 
@@ -12486,7 +12725,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.breadcrumb {\n  background: #fff;\n  border-bottom: 1px solid #e1e2e2;\n}\n.breadcrumb nav {\n    padding: 0px 26px;\n    line-height: 40px;\n    font-size: 12px;\n    color: gray;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -12500,7 +12739,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -12514,7 +12753,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.table.fixed-top {\n  white-space: nowrap;\n}\n", ""]);
+exports.push([module.i, "\n.wy-pager {\n  text-align: center;\n}\n.wy-pager > div {\n    display: inline-block;\n}\n.wy-pager > div > button, .wy-pager > div div {\n      float: left;\n      display: inline-block;\n}\n.wy-pager > div > div span {\n      margin: 0 3px;\n}\n.wy-pager > div::after {\n      content: '';\n      display: block;\n      height: 0;\n      clear: both;\n      visibility: hidden;\n      line-height: 0;\n      font-size: 0;\n}\n.wy-pager button {\n    margin: 0px 3px;\n    padding: 5px 10px;\n    color: #666;\n    background: #fff;\n    border: 1px solid #e5e5e5;\n    border-radius: 5px;\n    outline: none;\n    cursor: pointer;\n}\n.wy-pager .pager-btn-group {\n    display: inline;\n    padding-left: 0;\n    list-style: none;\n}\n.wy-pager .pager-btn-group li.btn-item {\n      float: left;\n      padding: 5px 10px;\n      margin: 0px 3px;\n      border: 1px solid #fff;\n      box-shadow: 0 2px 3px #666;\n      cursor: pointer;\n      color: #666;\n      border-radius: 10%;\n}\n.wy-pager .pager-btn-group li.btn-item.active {\n        color: #fff;\n        background: #007ACC;\n        border: 1px solid #007abb;\n        box-shadow: 0 2px 3px #666;\n}\n.wy-pager .pager-pre, .wy-pager .pager-next {\n    border: 1px solid #fff;\n    box-shadow: 0 2px 3px #666;\n}\n", ""]);
 
 // exports
 
@@ -12528,7 +12767,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.popup-message {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n}\n.popup-message .message-item {\n    position: relative;\n    padding: 10px;\n    padding-right: 30px;\n    margin: 3px;\n    color: #fff;\n    background: #04a7ba;\n    border-radius: 3px 0px 0px 3px;\n}\n.popup-message .message-item > .close {\n      position: absolute;\n      top: 5px;\n      right: 5px;\n      font-size: 16px;\n      cursor: pointer;\n      font-weight: 800;\n      transform: rotate(45deg);\n}\n", ""]);
+exports.push([module.i, "\n.breadcrumb {\n  background: #fff;\n  border-bottom: 1px solid #e1e2e2;\n}\n.breadcrumb nav {\n    padding: 0px 26px;\n    line-height: 40px;\n    font-size: 12px;\n    color: gray;\n}\n", ""]);
 
 // exports
 
@@ -12542,7 +12781,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.loading {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n}\n.loading .loading-mask {\n    position: fixed;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 99;\n    background: rgba(0, 0, 0, 0.5);\n}\n.loading .spinner {\n    margin: 200px auto;\n    width: 60px;\n    height: 60px;\n    position: relative;\n}\n.loading .container1 > div, .loading .container2 > div, .loading .container3 > div {\n    width: 16px;\n    height: 16px;\n    background-color: #fff;\n    border-radius: 100%;\n    position: absolute;\n    -webkit-animation: bouncedelay 1.2s infinite ease-in-out;\n    animation: bouncedelay 1.2s infinite ease-in-out;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n}\n.loading .spinner .spinner-container {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    z-index: 100;\n}\n.loading .container2 {\n    -webkit-transform: rotateZ(45deg);\n    transform: rotateZ(45deg);\n}\n.loading .container3 {\n    -webkit-transform: rotateZ(90deg);\n    transform: rotateZ(90deg);\n}\n.loading .circle1 {\n    top: 0;\n    left: 0;\n}\n.loading .circle2 {\n    top: 0;\n    right: 0;\n}\n.loading .circle3 {\n    right: 0;\n    bottom: 0;\n}\n.loading .circle4 {\n    left: 0;\n    bottom: 0;\n}\n.loading .container2 .circle1 {\n    -webkit-animation-delay: -1.1s;\n    animation-delay: -1.1s;\n}\n.loading .container3 .circle1 {\n    -webkit-animation-delay: -1.0s;\n    animation-delay: -1.0s;\n}\n.loading .container1 .circle2 {\n    -webkit-animation-delay: -0.9s;\n    animation-delay: -0.9s;\n}\n.loading .container2 .circle2 {\n    -webkit-animation-delay: -0.8s;\n    animation-delay: -0.8s;\n}\n.loading .container3 .circle2 {\n    -webkit-animation-delay: -0.7s;\n    animation-delay: -0.7s;\n}\n.loading .container1 .circle3 {\n    -webkit-animation-delay: -0.6s;\n    animation-delay: -0.6s;\n}\n.loading .container2 .circle3 {\n    -webkit-animation-delay: -0.5s;\n    animation-delay: -0.5s;\n}\n.loading .container3 .circle3 {\n    -webkit-animation-delay: -0.4s;\n    animation-delay: -0.4s;\n}\n.loading .container1 .circle4 {\n    -webkit-animation-delay: -0.3s;\n    animation-delay: -0.3s;\n}\n.loading .container2 .circle4 {\n    -webkit-animation-delay: -0.2s;\n    animation-delay: -0.2s;\n}\n.loading .container3 .circle4 {\n    -webkit-animation-delay: -0.1s;\n    animation-delay: -0.1s;\n}\n@-webkit-keyframes bouncedelay {\n0%, 80%, 100% {\n    -webkit-transform: scale(0);\n}\n40% {\n    -webkit-transform: scale(1);\n}\n}\n@keyframes bouncedelay {\n0%, 80%, 100% {\n    transform: scale(0);\n    -webkit-transform: scale(0);\n}\n40% {\n    transform: scale(1);\n    -webkit-transform: scale(1);\n}\n}\n", ""]);
 
 // exports
 
@@ -12556,7 +12795,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.wy-modal {\n  display: inline-block;\n}\n.wy-modal .wy-modal-mask {\n    position: fixed;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 99;\n    background: rgba(0, 0, 0, 0.3);\n}\n.wy-modal .wy-modal-body {\n    position: absolute;\n    display: flex;\n    flex-direction: column;\n    left: 50%;\n    top: 40%;\n    transform: translate(-50%, -50%);\n    background: #fff;\n    border-radius: 4px;\n    z-index: 100;\n}\n.wy-modal .wy-modal-body > header {\n      position: relative;\n      padding: 0px 40px 0px 10px;\n      flex-grow: 0;\n      border-bottom: 1px solid #ddd;\n}\n.wy-modal .wy-modal-body > header .close {\n        position: absolute;\n        width: 40px;\n        right: 0px;\n        top: 0px;\n        background: #f0f0f0;\n        text-align: center;\n        cursor: pointer;\n}\n.wy-modal .wy-modal-body > header .close:hover {\n          background: #007ACC;\n          color: #fff;\n}\n.wy-modal .wy-modal-body > .main {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-grow: 1;\n      padding: 10px;\n      overflow-y: auto;\n}\n.wy-modal .wy-modal-body > footer {\n      flex-grow: 0;\n      padding: 0px 10px;\n      border-top: 1px solid #ddd;\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -12570,7 +12809,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Prevent adjustments of font size after orientation changes in IE and iOS.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n * 2. Add the correct display in IE.\n */\n\narticle,\naside,\ndetails, /* 1 */\nfigcaption,\nfigure,\nfooter,\nheader,\nmain, /* 2 */\nmenu,\nnav,\nsection,\nsummary { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\n * Add the correct display in IE 10-.\n * 1. Add the correct display in IE.\n */\n\ntemplate, /* 1 */\n[hidden] {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change font properties to `inherit` in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\nselect,\ntextarea {\n  font: inherit; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Restore the font weight unset by the previous rule.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Correct the text style of placeholders in Chrome, Edge, and Safari.\n */\n\n::-webkit-input-placeholder {\n  color: inherit;\n  opacity: 0.54;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -12579,15 +12818,85 @@ exports.push([module.i, "/*! normalize.css v4.1.1 | MIT License | github.com/nec
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.table.fixed-top {\n  white-space: nowrap;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.popup-message {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n}\n.popup-message .message-item {\n    position: relative;\n    padding: 10px;\n    padding-right: 30px;\n    margin: 3px;\n    color: #fff;\n    background: #04a7ba;\n    border-radius: 3px 0px 0px 3px;\n}\n.popup-message .message-item > .close {\n      position: absolute;\n      top: 5px;\n      right: 5px;\n      font-size: 16px;\n      cursor: pointer;\n      font-weight: 800;\n      transform: rotate(45deg);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.wy-modal {\n  display: inline-block;\n}\n.wy-modal .wy-modal-mask {\n    position: fixed;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 99;\n    background: rgba(0, 0, 0, 0.3);\n}\n.wy-modal .wy-modal-body {\n    position: absolute;\n    display: flex;\n    flex-direction: column;\n    left: 50%;\n    top: 40%;\n    transform: translate(-50%, -50%);\n    background: #fff;\n    border-radius: 4px;\n    z-index: 100;\n}\n.wy-modal .wy-modal-body > header {\n      position: relative;\n      padding: 0px 40px 0px 10px;\n      flex-grow: 0;\n      border-bottom: 1px solid #ddd;\n}\n.wy-modal .wy-modal-body > header .close {\n        position: absolute;\n        width: 40px;\n        right: 0px;\n        top: 0px;\n        background: #f0f0f0;\n        text-align: center;\n        cursor: pointer;\n}\n.wy-modal .wy-modal-body > header .close:hover {\n          background: #007ACC;\n          color: #fff;\n}\n.wy-modal .wy-modal-body > .main {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-grow: 1;\n      padding: 10px;\n      overflow-y: auto;\n}\n.wy-modal .wy-modal-body > footer {\n      flex-grow: 0;\n      padding: 0px 10px;\n      border-top: 1px solid #ddd;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Prevent adjustments of font size after orientation changes in IE and iOS.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n * 2. Add the correct display in IE.\n */\n\narticle,\naside,\ndetails, /* 1 */\nfigcaption,\nfigure,\nfooter,\nheader,\nmain, /* 2 */\nmenu,\nnav,\nsection,\nsummary { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\n * Add the correct display in IE 10-.\n * 1. Add the correct display in IE.\n */\n\ntemplate, /* 1 */\n[hidden] {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change font properties to `inherit` in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\nselect,\ntextarea {\n  font: inherit; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Restore the font weight unset by the previous rule.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Correct the text style of placeholders in Chrome, Edge, and Safari.\n */\n\n::-webkit-input-placeholder {\n  color: inherit;\n  opacity: 0.54;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
 
 /* styles */
-__webpack_require__(85)
+__webpack_require__(94)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(14),
   /* template */
-  __webpack_require__(69),
+  __webpack_require__(76),
   /* scopeId */
   null,
   /* cssModules */
@@ -12614,18 +12923,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 47 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(84)
+__webpack_require__(93)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(16),
   /* template */
-  __webpack_require__(68),
+  __webpack_require__(75),
   /* scopeId */
   null,
   /* cssModules */
@@ -12652,18 +12961,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 48 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(82)
+__webpack_require__(91)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(17),
   /* template */
-  __webpack_require__(66),
+  __webpack_require__(73),
   /* scopeId */
   null,
   /* cssModules */
@@ -12690,18 +12999,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 49 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(89)
+__webpack_require__(100)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(18),
   /* template */
-  __webpack_require__(74),
+  __webpack_require__(83),
   /* scopeId */
   null,
   /* cssModules */
@@ -12728,18 +13037,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 50 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(83)
+__webpack_require__(92)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(19),
   /* template */
-  __webpack_require__(67),
+  __webpack_require__(74),
   /* scopeId */
   null,
   /* cssModules */
@@ -12766,14 +13075,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 51 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(20),
   /* template */
-  __webpack_require__(73),
+  __webpack_require__(82),
   /* scopeId */
   null,
   /* cssModules */
@@ -12800,18 +13109,56 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 52 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(77)
+__webpack_require__(97)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(21),
   /* template */
-  __webpack_require__(61),
+  __webpack_require__(79),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/apple/Code/wyUI/views/demo/loading.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] loading.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7dc116a8", Component.options)
+  } else {
+    hotAPI.reload("data-v-7dc116a8", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(86)
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(22),
+  /* template */
+  __webpack_require__(68),
   /* scopeId */
   null,
   /* cssModules */
@@ -12838,18 +13185,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 53 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(78)
+__webpack_require__(87)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(22),
+  __webpack_require__(23),
   /* template */
-  __webpack_require__(62),
+  __webpack_require__(69),
   /* scopeId */
   null,
   /* cssModules */
@@ -12876,18 +13223,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 54 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(87)
+__webpack_require__(98)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(23),
+  __webpack_require__(24),
   /* template */
-  __webpack_require__(71),
+  __webpack_require__(80),
   /* scopeId */
   null,
   /* cssModules */
@@ -12914,18 +13261,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 55 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(86)
+__webpack_require__(96)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(24),
+  __webpack_require__(25),
   /* template */
-  __webpack_require__(70),
+  __webpack_require__(78),
   /* scopeId */
   null,
   /* cssModules */
@@ -12952,18 +13299,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 56 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(79)
+__webpack_require__(88)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(25),
+  __webpack_require__(26),
   /* template */
-  __webpack_require__(63),
+  __webpack_require__(70),
   /* scopeId */
   null,
   /* cssModules */
@@ -12990,18 +13337,56 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 57 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(80)
+__webpack_require__(95)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(26),
+  __webpack_require__(27),
   /* template */
-  __webpack_require__(64),
+  __webpack_require__(77),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/apple/Code/wyUI/views/plugins/loading/loading.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] loading.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5894510e", Component.options)
+  } else {
+    hotAPI.reload("data-v-5894510e", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(89)
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(28),
+  /* template */
+  __webpack_require__(71),
   /* scopeId */
   null,
   /* cssModules */
@@ -13028,18 +13413,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 58 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(76)
+__webpack_require__(85)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(27),
+  __webpack_require__(29),
   /* template */
-  __webpack_require__(60),
+  __webpack_require__(67),
   /* scopeId */
   null,
   /* cssModules */
@@ -13066,18 +13451,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 59 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(88)
+__webpack_require__(99)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(28),
+  __webpack_require__(30),
   /* template */
-  __webpack_require__(72),
+  __webpack_require__(81),
   /* scopeId */
   null,
   /* cssModules */
@@ -13104,7 +13489,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 60 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13153,7 +13538,7 @@ if (false) {
 }
 
 /***/ }),
-/* 61 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13173,7 +13558,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.confirmMsg
     }
-  }, [_vm._v("确认框")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\nthis.$plugins.Popup.confirm({\n    title: '删除提示',\n    text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。',\n    cb: () => {\n        this.$plugins.Popup.alert('删除成功!')\n    }\n})\n")])])
+  }, [_vm._v("确认框")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\nthis.$plugins.Popup.confirm({\n    title: '删除提示',\n    text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。',\n    cb: () => {\n        this.$plugins.Popup.alert('删除成功!')\n    }\n})\n")]), _vm._v(" "), _c('h4', {
+    staticClass: "title"
+  }, [_vm._v("Message框")]), _vm._v(" "), _c('button', {
+    staticClass: "button big primary",
+    on: {
+      "click": _vm.messageBox
+    }
+  }, [_vm._v("message框")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n// 参数可为string类型或object, object要求格式为{text: '', duration: 1000}  duration为关闭的延迟时间\n// 如果参数为string类型的话，默认关闭时间为5秒\nthis.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000})\nthis.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000})\nthis.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000})\nthis.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的4', duration: 10000})\n")])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -13184,7 +13576,7 @@ if (false) {
 }
 
 /***/ }),
-/* 62 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13239,7 +13631,7 @@ if (false) {
 }
 
 /***/ }),
-/* 63 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13355,7 +13747,7 @@ if (false) {
 }
 
 /***/ }),
-/* 64 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13408,7 +13800,7 @@ if (false) {
 }
 
 /***/ }),
-/* 65 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13447,7 +13839,7 @@ if (false) {
 }
 
 /***/ }),
-/* 66 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13492,7 +13884,7 @@ if (false) {
 }
 
 /***/ }),
-/* 67 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13539,7 +13931,7 @@ if (false) {
 }
 
 /***/ }),
-/* 68 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13596,7 +13988,7 @@ if (false) {
 }
 
 /***/ }),
-/* 69 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13623,7 +14015,60 @@ if (false) {
 }
 
 /***/ }),
-/* 70 */
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.show) ? _c('div', {
+    staticClass: "loading"
+  }, [_c('div', {
+    staticClass: "loading-mask"
+  }), _vm._v(" "), _vm._m(0)]) : _vm._e()
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "spinner-container container1"
+  }, [_c('div', {
+    staticClass: "circle1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle3"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle4"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "spinner-container container2"
+  }, [_c('div', {
+    staticClass: "circle1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle3"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle4"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "spinner-container container3"
+  }, [_c('div', {
+    staticClass: "circle1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle3"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "circle4"
+  })])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-5894510e", module.exports)
+  }
+}
+
+/***/ }),
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13657,7 +14102,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.confirmMsg
     }
-  }, [_vm._v("确认框")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])])
+  }, [_vm._v("确认框")]), _vm._v(" "), _c('button', {
+    staticClass: "button big primary",
+    on: {
+      "click": _vm.setLoding
+    }
+  }, [_vm._v("loading")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('thead', [_c('th', [_vm._v("订单编号")]), _vm._v(" "), _c('th', [_vm._v("成交时间")]), _vm._v(" "), _c('th', [_vm._v("成交金额")]), _vm._v(" "), _c('th', [_vm._v("客户")]), _vm._v(" "), _c('th', [_vm._v("操作")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13677,7 +14127,61 @@ if (false) {
 }
 
 /***/ }),
-/* 71 */
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "init-page"
+  }, [_c('h4', {
+    staticClass: "title"
+  }, [_vm._v("全局加载")]), _vm._v(" "), _c('button', {
+    staticClass: "button big primary",
+    on: {
+      "click": _vm.setLoding
+    }
+  }, [_vm._v("loading")]), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\nsetLoding() {\n    this.$plugins.Loading.show()\n    setTimeout(() => {\n        this.$plugins.Loading.close()\n    }, 5000)\n}\n        ")]), _vm._v(" "), _c('h4', {
+    staticClass: "title"
+  }, [_vm._v("箭头标签")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('p', [_vm._v("使用方式：")]), _vm._v(" "), _c('pre', [_vm._v("\n<span class=\"span arrow-left\">default</span>\n<span class=\"span primary arrow-right\">primary</span>\n<span class=\"span info arrow-left\">info</span>\n<span class=\"span danger arrow-right\">danger</span>\n        ")])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticStyle: {
+      "margin-bottom": "20px"
+    }
+  }, [_c('span', {
+    staticClass: "span arrow-left",
+    staticStyle: {
+      "margin": "0px 25px"
+    }
+  }, [_vm._v("default")]), _vm._v(" "), _c('span', {
+    staticClass: "span primary arrow-right",
+    staticStyle: {
+      "margin": "0px 25px"
+    }
+  }, [_vm._v("primary")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('span', {
+    staticClass: "span info arrow-left",
+    staticStyle: {
+      "margin": "0px 25px"
+    }
+  }, [_vm._v("info")]), _vm._v(" "), _c('span', {
+    staticClass: "span danger arrow-right",
+    staticStyle: {
+      "margin": "0px 25px"
+    }
+  }, [_vm._v("danger")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7dc116a8", module.exports)
+  }
+}
+
+/***/ }),
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13754,7 +14258,7 @@ if (false) {
 }
 
 /***/ }),
-/* 72 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13786,7 +14290,7 @@ if (false) {
 }
 
 /***/ }),
-/* 73 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -14070,7 +14574,7 @@ if (false) {
 }
 
 /***/ }),
-/* 74 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -14133,7 +14637,7 @@ if (false) {
 }
 
 /***/ }),
-/* 75 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -14165,13 +14669,13 @@ if (false) {
 }
 
 /***/ }),
-/* 76 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(30);
+var content = __webpack_require__(33);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14191,13 +14695,13 @@ if(false) {
 }
 
 /***/ }),
-/* 77 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(31);
+var content = __webpack_require__(34);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14217,13 +14721,13 @@ if(false) {
 }
 
 /***/ }),
-/* 78 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(32);
+var content = __webpack_require__(35);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14243,13 +14747,13 @@ if(false) {
 }
 
 /***/ }),
-/* 79 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(33);
+var content = __webpack_require__(36);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14269,13 +14773,13 @@ if(false) {
 }
 
 /***/ }),
-/* 80 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(34);
+var content = __webpack_require__(37);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14295,13 +14799,13 @@ if(false) {
 }
 
 /***/ }),
-/* 81 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(35);
+var content = __webpack_require__(38);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14321,13 +14825,13 @@ if(false) {
 }
 
 /***/ }),
-/* 82 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(36);
+var content = __webpack_require__(39);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14347,13 +14851,13 @@ if(false) {
 }
 
 /***/ }),
-/* 83 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(37);
+var content = __webpack_require__(40);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14373,13 +14877,13 @@ if(false) {
 }
 
 /***/ }),
-/* 84 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(38);
+var content = __webpack_require__(41);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14399,13 +14903,13 @@ if(false) {
 }
 
 /***/ }),
-/* 85 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(39);
+var content = __webpack_require__(42);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14425,13 +14929,39 @@ if(false) {
 }
 
 /***/ }),
-/* 86 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(40);
+var content = __webpack_require__(43);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("1f430134", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5894510e!../../../node_modules/sass-loader/index.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./loading.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5894510e!../../../node_modules/sass-loader/index.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./loading.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(44);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14451,13 +14981,39 @@ if(false) {
 }
 
 /***/ }),
-/* 87 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(41);
+var content = __webpack_require__(45);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("519f11d8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-7dc116a8!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./loading.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-7dc116a8!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./loading.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(46);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14477,13 +15033,13 @@ if(false) {
 }
 
 /***/ }),
-/* 88 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(42);
+var content = __webpack_require__(47);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14503,13 +15059,13 @@ if(false) {
 }
 
 /***/ }),
-/* 89 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(43);
+var content = __webpack_require__(48);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14529,13 +15085,13 @@ if(false) {
 }
 
 /***/ }),
-/* 90 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(44);
+var content = __webpack_require__(49);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -14555,7 +15111,7 @@ if(false) {
 }
 
 /***/ }),
-/* 91 */
+/* 102 */
 /***/ (function(module, exports) {
 
 /**
@@ -14588,7 +15144,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 92 */
+/* 103 */
 /***/ (function(module, exports) {
 
 var g;
@@ -14615,7 +15171,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 93 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -190,7 +190,7 @@
                         {title: '表格', to: '/table'}
                     ]},
                     {title: '弹框提醒', to: '/popup', icon: 'fa fa-arrows-alt'},
-                    {title: '加载动画', to: '', icon: 'fa fa-hourglass-half'}
+                    {title: '加载动画', to: '/loading', icon: 'fa fa-hourglass-half'}
             ]
         },
         watch: {
