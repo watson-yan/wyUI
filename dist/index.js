@@ -13654,7 +13654,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]) : _vm._e(), _vm._v(" "), (_vm.mode == 'brief') ? _c('h4', {
     staticClass: "menu-title brief"
-  }, [_vm._v("\n         "), _c('i', {
+  }, [_c('i', {
     staticClass: "fa fa-indent",
     staticStyle: {
       "margin-left": "10px"
