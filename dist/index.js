@@ -12118,13 +12118,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-// {  // 菜单项应该写成的格式
-//     title: '',   // 名称
-//     to: '',      // 链接地址
-//     outerLink: '',  // Boolean, 是否是外部链接  内部链接用router-link, 外部链接使用传统a标签
-//     icon: '',    // 对应的fontawesome图标的class
-//     children: []  // 子分类(不渲染图标)
-// },
 /* harmony default export */ __webpack_exports__["default"] = {
     data() {
         return {
@@ -12133,7 +12126,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     created() {
-        this.list = [{ title: '综合首页', to: '/', icon: 'fa fa-home' }, { title: '按钮标签', to: '/button', icon: 'fa fa-hand-o-up', children: [{ title: '按钮', to: '/button' }, { title: '标签', to: '/span' }] }, { title: '文本表单', to: '/', icon: 'fa fa-align-left', children: [{ title: '表单', to: '/form' }, { title: '表格', to: '/table' }] }, { title: '弹框提醒', to: '/popup', icon: 'fa fa-arrows-alt' }, { title: '加载动画', to: '/loading', icon: 'fa fa-hourglass-half' }];
+        this.list = [{
+            title: '综合首页',
+            to: '/',
+            icon: 'fa fa-home'
+        }, {
+            title: '按钮标签',
+            to: '/button',
+            icon: 'fa fa-hand-o-up',
+            children: [{ title: '按钮', to: '/button' }, { title: '标签', to: '/span' }]
+        }, {
+            title: '文本表单',
+            icon: 'fa fa-align-left',
+            children: [{ title: '表单', to: '/form' }, { title: '表格', to: '/table' }]
+        }, {
+            title: '弹框提醒',
+            to: '/popup',
+            icon: 'fa fa-arrows-alt'
+        }, {
+            title: '加载动画',
+            to: '/loading',
+            icon: 'fa fa-hourglass-half'
+        }];
     },
     watch: {
         mode(newVal) {
