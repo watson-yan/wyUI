@@ -15,11 +15,11 @@ html, body {
     position: absolute;
     width: 0px;
     height: 0px;
-    left: -24px;
+    left: -12px;
     top: 0;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-right: 24px solid $color;
+    border-right: 12px solid $color;
 }
 @mixin arrow-right($color) {
     display: block;
@@ -28,10 +28,10 @@ html, body {
     width: 0px;
     height: 0px;
     top: 0px;
-    right: -24px;
+    right: -12px;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-left: 24px solid $color;
+    border-left: 12px solid $color;
 }
 
 // 文本颜色生成器
@@ -366,7 +366,7 @@ textarea {
            box-shadow: 0px 2px 4px #777;
        }
     }
-    &::focus {
+    &:focus {
         outline: none;
     }
 }
