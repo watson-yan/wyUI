@@ -11,7 +11,7 @@
                 <a v-if="item.outerLink" :href="item.to" target="_blank" class="no-decoration">
                     <i :class="item.icon"></i> {{item.title}}
                 </a>
-                <a v-else @click="next(item)" class="no-decoration">
+                <a v-else @click="next(item, $event)" class="no-decoration">
                     <i :class="item.icon"></i> {{item.title}}
                 </a>
                 <div v-if="!item.outerLink && item.children && item.children.length != 0">
@@ -229,7 +229,8 @@
                     }, false)
                 })
             },
-            next(item) {
+            next(item, e) {
+                e.preventDefault()
                 if (item.children && item.children.length > 0) {
                     const childrenBox = event.target.parentNode.querySelector('ul')
                     childrenBox.style.display = childrenBox.style.display === 'none' ? 'block' : 'none'

@@ -30,6 +30,7 @@
             <button @click="setLoding" class="button big primary">loading</button>
             <br>
             <br>
+            <wy-select :options="options" v-on:changed="changed"></wy-select>
         </div>
     </div>
 </template>
@@ -42,6 +43,20 @@
         data() {
             return {
                 showModal: false,
+                options: [
+                    {value: 1, text: '创建后也是响应式的1'},
+                    {value: 2, text: '创建后也是响应式的2'},
+                    {value: 3, text: '创建后也是响应式的3'},
+                    {value: 4, text: '创建后也是响应式的4'},
+                    {value: 1, text: '创建后也是响应式的1'},
+                    {value: 2, text: '创建后也是响应式的2'},
+                    {value: 3, text: '创建后也是响应式的3'},
+                    {value: 4, text: '创建后也是响应式的4'},{value: 1, text: '创建后也是响应式的1'},
+                    {value: 2, text: '创建后也是响应式的2'},
+                    {value: 3, text: '创建后也是响应式的3'},
+                    {value: 4, text: '创建后也是响应式的4'}
+
+                ]
             }
         },
         computed: {
@@ -71,6 +86,9 @@
                 setTimeout(() => {
                     this.$plugins.Loading.close()
                 }, 5000)
+            },
+            changed(result) {
+                console.warn(result)
             }
         }
     }
