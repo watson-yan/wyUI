@@ -28,6 +28,7 @@
             max-height: 165px;
             overflow-y: scroll;
             border: 1px solid #ececec;
+            z-index: 100;
             ul {
                 list-style: none;
                 margin: 0;

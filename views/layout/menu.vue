@@ -192,7 +192,8 @@
                         icon: 'fa fa-align-left',
                         children: [
                             {title: '表单', to: '/form'},
-                            {title: '表格', to: '/table'}
+                            {title: '表格', to: '/table'},
+                            {title: '下拉框', to: '/select'}
                         ]
                     },
                     {
