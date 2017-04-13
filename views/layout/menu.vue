@@ -8,16 +8,16 @@
         </h4>
         <ul v-if="mode=='detail'" class="detail">
             <li v-for="item in list">
-                <a v-if="item.outerLink" :href="item.to" target="_blank" class="no-decoration">
+                <a v-if="item.outer" :href="item.to" target="_blank" class="text-ellipsis no-decoration">
                     <i :class="item.icon"></i> {{item.title}}
                 </a>
-                <a v-else @click="next(item, $event)" class="no-decoration">
+                <a v-else v-on:click="next(item, $event)" class="text-ellipsis no-decoration">
                     <i :class="item.icon"></i> {{item.title}}
                 </a>
-                <div v-if="!item.outerLink && item.children && item.children.length != 0">
+                <div v-if="!item.outer && item.children && item.children.length != 0">
                     <ul class="children-box" style="display: none;">
                         <li v-for="c of item.children">
-                            <router-link :to="c.to" class="no-decoration">
+                            <router-link :to="c.to" class="text-ellipsis no-decoration">
                                 {{c.title}}
                             </router-link>
                         </li>
@@ -28,21 +28,22 @@
 
         <ul v-if="mode=='brief'" class="brief">
             <li v-for="item of list">
-                <a v-if="item.outerLink" :href="item.to"
-                     target="_blank" class="no-decoration" :title="item.title">
+                <a v-if="item.outer" :href="item.to"
+                     target="_blank" :title="item.title">
                     <i :class="item.icon"></i>
                 </a>
-                <router-link v-if="!item.outerLink && !item.children" @mouseenter="mouseenter"
-                 :to="item.to" class="brief-item no-decoration" :title="item.title">
+                <router-link v-if="!item.outer && !item.children" @mouseenter="mouseenter"
+                 :to="item.to" class="brief-item text-ellipsis no-decoration" :title="item.title">
                     <i :class="item.icon"></i>
                 </router-link>
-                <a v-if="!item.outerLink && item.children && item.children.length != 0" :title="item.title">
+                <a v-if="!item.outer && item.children && item.children.length != 0" :title="item.title">
                     <i :class="item.icon"></i>
                 </a>
-                <div v-if="!item.outerLink && item.children && item.children.length != 0">
+                <div v-if="!item.outer && item.children && item.children.length != 0">
+                    <p>{{item.title}}</p>
                     <ul class="children-box">
                         <li v-for="c of item.children">
-                            <router-link :to="c.to" class="no-decoration">
+                            <router-link :to="c.to" class="text-ellipsis no-decoration">
                                 {{c.title}}
                             </router-link>
                         </li>
@@ -52,117 +53,7 @@
         </ul>
     </div>
 </template>
-<style lang="sass">
-    @import '../../static/css/common.scss';
-
-    .side-menu {
-        display: inline-block;
-        height: 100%;
-        background: #f8f8f8;
-        border-right: 1px solid #e1e2e2;
-        transition: all ease .2s;
-
-        .menu-title{
-            margin: 0;
-            line-height: 40px;
-            font-size: 14px;
-            background: #f2f3f4;
-            border-bottom: 1px solid #e1e2e2;
-            a {
-                float: right;
-                line-height: 40px;
-            }
-            &.brief {
-                padding-left: 0px;
-                a{
-                    margin-right: 13px;
-                }
-            }
-            &.detail {
-                padding-left: 18px;
-                a{
-                    margin-right: 8px;
-                }
-            }
-        }
-        
-        ul {
-            margin: 0px;
-            padding-left: 0px;
-            list-style: none;
-            li {
-                line-height: 40px;
-                a{
-                    display: block;
-                    color: #888888;
-                    font-size: 12px;
-                    &:hover {
-                        color: #007ACC;
-                    }
-                }
-                &:hover {
-                    background: #f3f4f4;
-                }
-            }
-            &.brief {
-                width: 40px;
-                &>li {
-                    position: relative;
-                    &>a {
-                        text-align: center;
-                        font-size: 14px;
-                    }
-                    &>div {
-                        display: none;
-                        position: absolute;
-                        left: 40px;
-                        top: 0;
-                        .children-box {
-                            padding-left: 0px;
-                            width: 130px;
-                            background: #fff;
-                            border-top: $border;
-                            border-bottom: $border;
-                            li {
-                                padding: 0px 10px;
-                                border-left: $border;
-                                border-right: $border;
-                                line-height: 30px;
-                            }
-                            li:first-child {
-                                line-height: 40px;
-                            }
-                        }
-                    }
-                    &:hover {
-                        margin: -1px 0px;
-                        border-top: $border;
-                        border-bottom: $border;
-                        &>div {
-                            display: inline;
-                        }
-                    }
-                }
-            }
-            &.detail {
-                width: 110px;
-                &>li {
-                    &>a {
-                        padding: 0px 10px;
-                    }
-                    &>div {
-                        ul {
-                            padding-left: 24px;
-                            li {
-                                line-height: 30px;
-                            }
-                        }
-                    }
-                }
-            }
-        } 
-    }
-</style>
+<style lang="sass" src="./menu.scss"></style>
 <script>
     export default {
         data() {
@@ -230,8 +121,8 @@
                     }, false)
                 })
             },
-            next(item, e) {
-                e.preventDefault()
+            next(item, event) {
+                event.preventDefault()
                 if (item.children && item.children.length > 0) {
                     const childrenBox = event.target.parentNode.querySelector('ul')
                     childrenBox.style.display = childrenBox.style.display === 'none' ? 'block' : 'none'

@@ -1,5 +1,5 @@
 <template>
-    <div class="wy-select" >
+    <div class="wy-select">
         <input type="text" :value="selectedText" @click.stop="show = !show" readonly :style="{width: width + 'px'}">
         <span class="arrow-down" :style="{left: width + 'px'}"></span>
         <section v-if="show" class="list-box">
@@ -13,6 +13,11 @@
 <style lang="sass">
     .wy-select {
         position: relative;
+        input {
+            background-color: #eee;
+            background-image: linear-gradient(#fcfcfc, #eee);
+            cursor: pointer;
+        }
         .arrow-down {
             content: '';
             display: block;
@@ -58,6 +63,9 @@ export default {
         options: {
             type: Array,
             required: true
+        },
+        selected: {
+            type: Object
         }
     },
     data() {
@@ -66,12 +74,24 @@ export default {
             selectedText: ''
         }
     },
+    mounted() {
+        // 如果传入默认选中值的话
+        if (this.selected) {
+            for (const option of this.options){
+                if (option.text === this.selected.text || option.value === this.selected.value) {
+                    this.selectedText = option.text
+                    this.$emit('changed', option)
+                    break
+                }
+            }
+        }
+    },
     watch: {
         show() {
             if(this.show) {
-                document.body.addEventListener('click', () => {
-                    this.show = false
-                })
+                document.body.addEventListener('click', this.tab)
+            } else {
+                document.body.removeEventListener('click', this.tab)
             }
         }
     },
@@ -79,6 +99,9 @@ export default {
         select(item) {
             this.selectedText = item.text
             this.$emit('changed', item)
+        },
+        tab() {
+            this.show = false
         }
     }
 }

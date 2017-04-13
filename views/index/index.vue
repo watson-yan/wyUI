@@ -30,7 +30,10 @@
             <button @click="setLoding" class="button big primary">loading</button>
             <br>
             <br>
-            <wy-select :options="options" v-on:changed="changed"></wy-select>
+            <wy-select :options="options" v-on:changed="changed" :selected="selected"></wy-select>
+            <br>
+            <br>
+            <wy-area v-on:changed="areaChanged" :selected="{province: '上海', city: '徐汇区'}"></wy-area>
         </div>
     </div>
 </template>
@@ -48,15 +51,16 @@
                     {value: 2, text: '创建后也是响应式的2'},
                     {value: 3, text: '创建后也是响应式的3'},
                     {value: 4, text: '创建后也是响应式的4'},
-                    {value: 1, text: '创建后也是响应式的1'},
-                    {value: 2, text: '创建后也是响应式的2'},
-                    {value: 3, text: '创建后也是响应式的3'},
-                    {value: 4, text: '创建后也是响应式的4'},{value: 1, text: '创建后也是响应式的1'},
-                    {value: 2, text: '创建后也是响应式的2'},
-                    {value: 3, text: '创建后也是响应式的3'},
-                    {value: 4, text: '创建后也是响应式的4'}
+                    // {value: 1, text: '创建后也是响应式的1'},
+                    // {value: 2, text: '创建后也是响应式的2'},
+                    // {value: 3, text: '创建后也是响应式的3'},
+                    // {value: 4, text: '创建后也是响应式的4'},{value: 1, text: '创建后也是响应式的1'},
+                    // {value: 2, text: '创建后也是响应式的2'},
+                    // {value: 3, text: '创建后也是响应式的3'},
+                    // {value: 4, text: '创建后也是响应式的4'}
 
-                ]
+                ],
+                selected: {value: 4, text: '创建后也是响应式的4'}
             }
         },
         computed: {
@@ -89,6 +93,9 @@
             },
             changed(result) {
                 console.warn(result)
+            },
+            areaChanged(province, city) {
+                console.warn(`${province}-${city}`)
             }
         }
     }

@@ -19,12 +19,30 @@
 // 3. width
 //      type: Number
 //      下拉框的宽度, 默认是200px宽
+
+// 4. selected
+//      type: Object
+//      默认选中的值，须和options中选择项一样
         </pre>
 
 
         <h4 class="title">
             省市级联特效
         </h4>
+        <wy-area v-on:changed="areaChanged" :selected="{province: '上海', city: '徐汇区'}"></wy-area>
+        <p>使用方式：</p>
+        <pre>
+&lt;wy-area v-on:changed="areaChanged" :selected="{province: '上海', city: '徐汇区'}"&gt;&lt;/wy-area&gt;
+// 参数列表
+
+// 1. v-on:changed = "someMethod"
+//      type： Function
+//      下拉框选定或者改变值得时候都会触发父元素定义的changed事件，并有两个字符串(province, city)作为参数
+
+// 4. selected
+//      type: Object
+//      默认选中的值，必须保证area数据中的一级选项和二级选项对应
+        </pre>
     </div>
 </template>
 <style lang="sass">
@@ -48,6 +66,9 @@ export default {
     methods: {
         changed(item) {
             console.warn(item)
+        },
+        areaChanged(province, city) {
+            console.warn(`${province}-${city}`)
         }
     }
 }

@@ -33,6 +33,7 @@ $assistant-color: #00b4aa;
     &>article{
         display: flex;
         flex-grow: 1;
+        overflow-y: scroll;
         .app-left, .app-right{
             display: inline-block;
         }

@@ -1,0 +1,120 @@
+    @import '../../static/css/common.scss';
+
+    .side-menu {
+        display: inline-block;
+        height: 100%;
+        background: #f8f8f8;
+        border-right: 1px solid #e1e2e2;
+        transition: all ease .2s;
+        h4 {
+            i {
+                cursor: pointer;
+            }
+        }
+        .menu-title{
+            margin: 0;
+            line-height: 40px;
+            font-size: 14px;
+            background: #f2f3f4;
+            border-bottom: 1px solid #e1e2e2;
+            a {
+                float: right;
+                line-height: 40px;
+            }
+            &.brief {
+                padding-left: 0px;
+                a{
+                    margin-right: 13px;
+                }
+            }
+            &.detail {
+                padding-left: 18px;
+                a{
+                    margin-right: 8px;
+                }
+            }
+        }
+        
+        ul {
+            margin: 0px;
+            padding-left: 0px;
+            list-style: none;
+            li {
+                line-height: 40px;
+                a{
+                    display: block;
+                    color: #888888;
+                    font-size: 12px;
+                    &:hover {
+                        color: #007ACC;
+                    }
+                }
+                &:hover {
+                    background: #f3f4f4;
+                }
+            }
+            &.brief {
+                width: 40px;
+                &>li {
+                    position: relative;
+                    &>a {
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                    &>div {
+                        display: none;
+                        position: absolute;
+                        left: 40px;
+                        top: 0;
+                        margin-top: -1px;
+                        z-index: 101;
+                        p {
+                            margin: 0;
+                            padding: 0px 10px;
+                            background: #f8f8f8;
+                            line-height: 40px;
+                            border: $border;
+                            border-bottom: none;
+                        }
+                        .children-box {
+                            padding-left: 0px;
+                            width: 130px;
+                            background: #fff;
+                            border-top: $border;
+                            border-bottom: $border;
+                            li {
+                                padding: 0px 10px;
+                                border-left: $border;
+                                border-right: $border;
+                                line-height: 34px;
+                            }
+                        }
+                    }
+                    &:hover {
+                        margin: -1px 0px;
+                        border-top: $border;
+                        border-bottom: $border;
+                        &>div {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+            &.detail {
+                width: 110px;
+                &>li {
+                    &>a {
+                        padding: 0px 10px;
+                    }
+                    &>div {
+                        ul {
+                            padding-left: 24px;
+                            li {
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
