@@ -34,6 +34,11 @@
             <br>
             <br>
             <wy-area v-on:changed="areaChanged" :selected="{province: '上海', city: '徐汇区'}"></wy-area>
+            <br>
+            <br>
+            <div style="width: 410px;">
+                <upload :src="'/api/imgs'"></upload>
+            </div>
         </div>
     </div>
 </template>

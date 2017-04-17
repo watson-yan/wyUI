@@ -5,6 +5,7 @@ import modal from './modal.vue'
 import popup from './popup.vue'
 import select from './select.vue'
 import area from './area.vue'
+import upload from './upload.vue'
 
 export default {
     install(Vue) {
@@ -14,5 +15,6 @@ export default {
         Vue.component('popup', popup)
         Vue.component('wy-select', select)
         Vue.component('wy-area', area)
+        Vue.component('upload', upload)
     }
 }

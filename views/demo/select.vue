@@ -39,7 +39,7 @@
 //      type： Function
 //      下拉框选定或者改变值得时候都会触发父元素定义的changed事件，并有两个字符串(province, city)作为参数
 
-// 4. selected
+// 2. selected
 //      type: Object
 //      默认选中的值，必须保证area数据中的一级选项和二级选项对应
         </pre>
