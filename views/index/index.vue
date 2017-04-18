@@ -43,8 +43,7 @@
     </div>
 </template>
 <style lang="sass">
-    .app-home {
-    }
+
 </style>
 <script>
     export default {
