@@ -2,11 +2,20 @@
     <div class="app">
         <header>
             <nav>
+                <h3>WYUI</h3>
                 <ul class="logined-list pull-right">
                     <li>
                         <router-link to="/me" class="text white no-decoration">
-                            <i class="fa fa-user-circle"></i> 我的信息
+                            <i class="fa fa-user-circle"></i> 个人信息
                         </router-link>
+                        <section>
+                            <ul>
+                                <li>我的资料</li>
+                                <li>浏览历史</li>
+                                <li>修改密码</li>
+                                <li>登录记录</li>
+                            </ul>
+                        </section>
                     </li>
                     <li>
                         <router-link to="/login" class="text white no-decoration">
@@ -36,26 +45,6 @@
     export default {
         data() {
             return {
-            }
-        },
-        created() {
-        },
-        methods: {
-            setTitle(val) {
-                document.title = val || ''
-            },
-            alert(option) {
-                this.popup.title = option.title || '提示信息'
-                this.popup.msg = option.msg
-                if (typeof(option.cb) !== 'function') {
-                    option.cb = null
-                } else {
-                    this.popup.cb = option.cb
-                }
-                this.showModal = true
-            },
-            show() {
-                console.warn('hello')
             }
         },
         components: {

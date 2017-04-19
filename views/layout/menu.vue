@@ -40,7 +40,7 @@
                     <i :class="item.icon"></i>
                 </a>
                 <div v-if="!item.outer && item.children && item.children.length != 0">
-                    <p>{{item.title}}</p>
+                    <p style="color: #666;">{{item.title}}</p>
                     <ul class="children-box">
                         <li v-for="c of item.children">
                             <router-link :to="c.to" class="text-ellipsis no-decoration">

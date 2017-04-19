@@ -336,6 +336,9 @@ textarea {
         font-size: 12px;
         padding: 2px 12px;
     }
+    &:active {
+        background: #f5f5f5;
+    }
     &.big {
         padding: 11px 45px;
     }
@@ -345,12 +348,18 @@ textarea {
         &:hover {
             background: #0771B9;
         }
+        &:active {
+            background: $primary;
+        }
     }
     &.danger {
         color: #fff;
         background: $danger;
         &:hover {
-            background: #f53c2e;
+            background: #d8271a;
+        }
+        &:active {
+            background: $danger;
         }
     }
     &.info {
@@ -358,6 +367,9 @@ textarea {
         background: $info;
         &:hover {
             background: #04ada3;
+        }
+        &:active {
+            background: $info;
         }
     }
     &.shadow {
