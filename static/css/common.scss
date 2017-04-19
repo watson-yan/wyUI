@@ -386,6 +386,29 @@ textarea {
     }
 }
 
+.btn-group {
+    display: inline-block;
+    font-size: 0px;
+    border-radius: 4px;
+    button {
+        margin: 0px -1px;
+        font-size: 14px;
+        border-radius: 0px;
+        border: 0.5px solid #ccc;
+        background: #fff;
+        &:first-child {
+            border-radius: 4px 0px 0px 4px;
+        }
+        &:last-child {
+            border-radius: 0px 4px 4px 0px;
+        }
+        &.active {
+            color: #fff;
+            background: #4aa6fc;
+            border-color: #4aa6fc;
+        }
+    }
+}
 
 /*
 ** 表格

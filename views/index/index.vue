@@ -27,13 +27,25 @@
         </section>
 
         <h4 class="title">表格</h4>
-        <div class="input-icon">
+        <div class="btn-group">
+            <button 
+                :class="{'button': true, 'small': true, 'active': active == 'value1'}" 
+                @click="active='value1'">全部</button>
+            <button 
+                :class="{'button': true, 'small': true, 'active': active == 'value2'}" 
+                @click="active='value2'">最近30天</button>
+            <button 
+                :class="{'button': true, 'small': true, 'active': active == 'value3'}" 
+                @click="active='value3'">最近一年</button>
+        </div>
+
+        <div class="input-icon pull-right">
             <input type="text" class="input icon-right" style="width: 300px;">
             <section class="icon-box right">
                 <i class="fa fa-search"></i>
             </section>
         </div>
-        <table class="table primary" border="0">
+        <table class="table table-striped" border="0">
             <thead>
                 <th>订单编号</th>
                 <th>成交时间</th>
@@ -63,22 +75,7 @@
     export default {
         data() {
             return {
-                showModal: false,
-                options: [
-                    {value: 1, text: '创建后也是响应式的1'},
-                    {value: 2, text: '创建后也是响应式的2'},
-                    {value: 3, text: '创建后也是响应式的3'},
-                    {value: 4, text: '创建后也是响应式的4'},
-                    // {value: 1, text: '创建后也是响应式的1'},
-                    // {value: 2, text: '创建后也是响应式的2'},
-                    // {value: 3, text: '创建后也是响应式的3'},
-                    // {value: 4, text: '创建后也是响应式的4'},{value: 1, text: '创建后也是响应式的1'},
-                    // {value: 2, text: '创建后也是响应式的2'},
-                    // {value: 3, text: '创建后也是响应式的3'},
-                    // {value: 4, text: '创建后也是响应式的4'}
-
-                ],
-                selected: {value: 4, text: '创建后也是响应式的4'}
+                active: 'value1'
             }
         },
         computed: {
