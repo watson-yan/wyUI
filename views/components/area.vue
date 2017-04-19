@@ -35,9 +35,10 @@
         position: absolute;
         max-height: 265px;
         overflow-y: scroll;
+        z-index: 2;
         ul {
             padding-left: 0;
-            min-width: 172px;
+            min-width: 170px;
             margin: 0;
             list-style: none;
             background: #fff;

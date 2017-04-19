@@ -1,6 +1,39 @@
 <template>
     <div class="init-page">
-        <table class="table" border="0">
+        <section class="module-link-area flex">
+            <div class="col1">
+                <a class="no-decoration">
+                    <i class="fa fa-comments-o"></i> 消息
+                </a>
+            </div>
+            <div class="col1">
+                <a class="no-decoration">
+                    <i class="fa fa-envelope-o"></i> 邮件
+                </a>
+            </div>
+            <div class="col1">
+                <a class="no-decoration">
+                    <i class="fa fa-paper-plane"></i> 计划
+                </a>
+            </div>
+            <div class="col1">
+                <a class="no-decoration">
+                    <i class="fa fa-shopping-cart"></i> 购物车
+                </a>
+            </div>
+            
+            
+                
+        </section>
+
+        <h4 class="title">表格</h4>
+        <div class="input-icon">
+            <input type="text" class="input icon-right" style="width: 300px;">
+            <section class="icon-box right">
+                <i class="fa fa-search"></i>
+            </section>
+        </div>
+        <table class="table primary" border="0">
             <thead>
                 <th>订单编号</th>
                 <th>成交时间</th>
@@ -23,28 +56,9 @@
         <div style="margin-top: 10px;">
             <pagination :total="124" :pn="1"></pagination>
         </div>
-
-        <div>
-            <button @click="alertMsg" class="button big info">消息列表</button>
-            <button @click="confirmMsg" class="button big danger">确认框</button>
-            <button @click="setLoding" class="button big primary">loading</button>
-            <br>
-            <br>
-            <wy-select :options="options" v-on:changed="changed" :selected="selected"></wy-select>
-            <br>
-            <br>
-            <wy-area v-on:changed="areaChanged" :selected="{province: '上海', city: '徐汇区'}"></wy-area>
-            <br>
-            <br>
-            <div style="width: 410px;">
-                <upload :src="'/api/imgs'"></upload>
-            </div>
-        </div>
     </div>
 </template>
-<style lang="sass">
-
-</style>
+<style lang="sass" src="./index.scss"></style>
 <script>
     export default {
         data() {

@@ -4,7 +4,7 @@
             网站导航 <i @click="mode='brief'" class="fa fa-outdent" aria-hidden="true"></i>
         </h4>
         <h4 class="menu-title brief" v-if="mode=='brief'">
-            <i @click="mode='detail'" class="fa fa-indent" aria-hidden="true" style="margin-left: 10px;"></i>
+            <i @click="mode='detail'" class="fa fa-indent" aria-hidden="true" style="margin-left: 14px;"></i>
         </h4>
         <ul v-if="mode=='detail'" class="detail">
             <li v-for="item in list">
@@ -83,9 +83,13 @@
                         icon: 'fa fa-align-left',
                         children: [
                             {title: '表单', to: '/form'},
-                            {title: '表格', to: '/table'},
                             {title: '下拉框', to: '/select'}
                         ]
+                    },
+                    {
+                        title: '表格样式',
+                        to: '/table',
+                        icon: 'fa fa-table'
                     },
                     {
                         title: '弹框提醒', 

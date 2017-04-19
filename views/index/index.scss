@@ -1,0 +1,20 @@
+.module-link-area {
+    margin-bottom: 20px;
+    &>div {
+        padding: 10px;
+        text-align: center;
+        a {
+            color: #444;
+            display: block;
+            padding: 20px 80px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            &:hover {
+                color: #007ACC;
+            }
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}

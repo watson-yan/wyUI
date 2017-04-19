@@ -32,7 +32,9 @@
             <div class="app-right">
                 <!--<breadcrumb :routes="routes"></breadcrumb>-->
                 <div class="app-content">
-                    <router-view></router-view>
+                    <transition :name="transitionName">
+                        <router-view></router-view>
+                    </transition>
                 </div>
             </div>
         </article>
@@ -45,6 +47,14 @@
     export default {
         data() {
             return {
+                transitionName: ''
+            }
+        },
+        watch: {
+            '$route' (to, from) {
+                const toDepth = to.path.split('/').length
+                const fromDepth = from.path.split('/').length
+                this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
             }
         },
         components: {

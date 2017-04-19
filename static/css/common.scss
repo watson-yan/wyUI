@@ -15,11 +15,11 @@ html, body {
     position: absolute;
     width: 0px;
     height: 0px;
-    left: -12px;
+    left: -10px;
     top: 0;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-right: 12px solid $color;
+    border-top: 10px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 10px solid $color;
 }
 @mixin arrow-right($color) {
     display: block;
@@ -28,10 +28,10 @@ html, body {
     width: 0px;
     height: 0px;
     top: 0px;
-    right: -12px;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-left: 12px solid $color;
+    right: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 10px solid $color;
 }
 
 // 文本颜色生成器
@@ -48,7 +48,7 @@ html, body {
 
 
 // 颜色
-$primary: #007ACC;
+$primary: #0996d1;
 $info: #00b4aa;
 $danger: #f44336;
 
@@ -157,6 +157,8 @@ h1,h2,h3,h4,h5 {
     &.title {
         border-bottom: $border;
         padding-bottom: 5px;
+        color: #555;
+        font-size: 400;
     }
 }
 
@@ -164,6 +166,7 @@ span {
     &.span {
         padding: 2px 5px;
         border-radius: 3px;
+        font-size: 12px;
         background: #e0e0e0;
         &.arrow-left {
             position: relative;
