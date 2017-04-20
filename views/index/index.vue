@@ -50,6 +50,7 @@
                 <th>订单编号</th>
                 <th>成交时间</th>
                 <th>成交金额</th>
+                <th>状态</th>
                 <th>客户</th>
                 <th>操作</th>
             </thead>
@@ -58,9 +59,19 @@
                     <td>{{item.id}}</td>
                     <td>{{item.createTime}}</td>
                     <td>{{item.money}}</td>
+                    <td>
+                        <span v-if="item.status=='finished'" class="span primary">已完成</span>
+                        <span v-if="item.status=='cancel'" class="span">已取消</span>
+                        <span v-if="item.status=='pending'" class="span info">交易中</span>
+                    </td>
                     <td>{{item.customer}}</td>
                     <td>
-                        <a to="/" class="primary">详情</a>
+                        <a to="/">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </a>
+                        <a to="/">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
                     </td>
                 </tr>
             </tbody>
@@ -86,32 +97,7 @@
         created() {
         },
         methods: {
-            alertMsg() {
-                this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000})
-                this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000})
-                this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000})
-            },
-            confirmMsg() {
-                this.$plugins.Popup.confirm({
-                    title: '删除提示',
-                    text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。这个方法主要用于避开 Vue 不能检测属性被添加的限制。',
-                    cb: () => {
-                        this.$plugins.Popup.alert('删除成功!')
-                    }
-                })
-            },
-            setLoding() {
-                this.$plugins.Loading.show()
-                setTimeout(() => {
-                    this.$plugins.Loading.close()
-                }, 5000)
-            },
-            changed(result) {
-                console.warn(result)
-            },
-            areaChanged(province, city) {
-                console.warn(`${province}-${city}`)
-            }
+        
         }
     }
 </script>

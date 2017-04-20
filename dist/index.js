@@ -10536,7 +10536,7 @@ _vue2.default.use(_vuex2.default);
 var store = new _vuex2.default.Store({
     state: {
         count: 0,
-        list: [{ id: '001', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '002', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '003', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }, { id: '004', createTime: '2016-10-01', money: '￥1,020', customer: 'Kimber David' }]
+        list: [{ id: '001', createTime: '2016-10-01', money: '￥1,020', status: 'finished', customer: 'Kimber David' }, { id: '002', createTime: '2016-10-01', money: '￥1,020', status: 'pending', customer: 'Kimber David' }, { id: '003', createTime: '2016-10-01', money: '￥1,020', status: 'cancel', customer: 'Kimber David' }, { id: '004', createTime: '2016-10-01', money: '￥1,020', status: 'cancel', customer: 'Kimber David' }, { id: '001', createTime: '2016-10-01', money: '￥1,020', status: 'finished', customer: 'Kimber David' }, { id: '002', createTime: '2016-10-01', money: '￥1,020', status: 'pending', customer: 'Kimber David' }, { id: '003', createTime: '2016-10-01', money: '￥1,020', status: 'cancel', customer: 'Kimber David' }, { id: '004', createTime: '2016-10-01', money: '￥1,020', status: 'cancel', customer: 'Kimber David' }, { id: '001', createTime: '2016-10-01', money: '￥1,020', status: 'finished', customer: 'Kimber David' }, { id: '002', createTime: '2016-10-01', money: '￥1,020', status: 'pending', customer: 'Kimber David' }, { id: '003', createTime: '2016-10-01', money: '￥1,020', status: 'cancel', customer: 'Kimber David' }, { id: '004', createTime: '2016-10-01', money: '￥1,020', status: 'cancel', customer: 'Kimber David' }]
     },
     mutations: {
         add: function add(state) {
@@ -12428,6 +12428,17 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     data: function data() {
@@ -12443,38 +12454,7 @@ exports.default = {
     },
     created: function created() {},
 
-    methods: {
-        alertMsg: function alertMsg() {
-            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000 });
-            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000 });
-            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000 });
-        },
-        confirmMsg: function confirmMsg() {
-            var _this = this;
-
-            this.$plugins.Popup.confirm({
-                title: '删除提示',
-                text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。这个方法主要用于避开 Vue 不能检测属性被添加的限制。',
-                cb: function cb() {
-                    _this.$plugins.Popup.alert('删除成功!');
-                }
-            });
-        },
-        setLoding: function setLoding() {
-            var _this2 = this;
-
-            this.$plugins.Loading.show();
-            setTimeout(function () {
-                _this2.$plugins.Loading.close();
-            }, 5000);
-        },
-        changed: function changed(result) {
-            console.warn(result);
-        },
-        areaChanged: function areaChanged(province, city) {
-            console.warn(province + '-' + city);
-        }
-    }
+    methods: {}
 };
 
 /***/ }),
@@ -15011,7 +14991,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(2), _vm._v(" "), _c('tbody', _vm._l((_vm.list), function(item) {
     return _c('tr', {
       staticClass: "center"
-    }, [_c('td', [_vm._v(_vm._s(item.id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.createTime))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.money))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.customer))]), _vm._v(" "), _vm._m(3, true)])
+    }, [_c('td', [_vm._v(_vm._s(item.id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.createTime))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.money))]), _vm._v(" "), _c('td', [(item.status == 'finished') ? _c('span', {
+      staticClass: "span primary"
+    }, [_vm._v("已完成")]) : _vm._e(), _vm._v(" "), (item.status == 'cancel') ? _c('span', {
+      staticClass: "span"
+    }, [_vm._v("已取消")]) : _vm._e(), _vm._v(" "), (item.status == 'pending') ? _c('span', {
+      staticClass: "span info"
+    }, [_vm._v("交易中")]) : _vm._e()]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.customer))]), _vm._v(" "), _vm._m(3, true)])
   }))]), _vm._v(" "), _c('div', {
     staticStyle: {
       "margin-top": "10px"
@@ -15067,14 +15053,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "fa fa-search"
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('th', [_vm._v("订单编号")]), _vm._v(" "), _c('th', [_vm._v("成交时间")]), _vm._v(" "), _c('th', [_vm._v("成交金额")]), _vm._v(" "), _c('th', [_vm._v("客户")]), _vm._v(" "), _c('th', [_vm._v("操作")])])
+  return _c('thead', [_c('th', [_vm._v("订单编号")]), _vm._v(" "), _c('th', [_vm._v("成交时间")]), _vm._v(" "), _c('th', [_vm._v("成交金额")]), _vm._v(" "), _c('th', [_vm._v("状态")]), _vm._v(" "), _c('th', [_vm._v("客户")]), _vm._v(" "), _c('th', [_vm._v("操作")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', [_c('a', {
-    staticClass: "primary",
     attrs: {
       "to": "/"
     }
-  }, [_vm._v("详情")])])
+  }, [_c('i', {
+    staticClass: "fa fa-cog",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c('a', {
+    attrs: {
+      "to": "/"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-trash",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
