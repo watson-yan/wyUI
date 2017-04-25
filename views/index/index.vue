@@ -20,10 +20,7 @@
                 <a class="no-decoration">
                     <i class="fa fa-shopping-cart"></i> 购物车
                 </a>
-            </div>
-            
-            
-                
+            </div>     
         </section>
 
         <h4 class="title">表格</h4>
