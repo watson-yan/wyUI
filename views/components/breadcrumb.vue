@@ -32,7 +32,7 @@ export default {
         return {}
     },
     watch: {
-        '$route': {
+        $route: {
             handler(newVal) {
                 console.warn(newVal)
             }

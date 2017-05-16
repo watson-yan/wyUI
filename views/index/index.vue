@@ -94,7 +94,7 @@
         created() {
         },
         methods: {
-        
+    
         }
     }
 </script>

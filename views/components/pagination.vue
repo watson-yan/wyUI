@@ -99,15 +99,15 @@
 				type: Function,
                 default(n) {
 					this.$route.query.pn = n
-					this.$router.push({path: this.$route.path, query: this.$route.query})
+					this.$router.push({ path: this.$route.path, query: this.$route.query })
                 }
 			}
 		},
 		data() {
 			return {
-                currentNum: 1,  // 当前页码 
+                currentNum: 1,  // 当前页码
 				totalPagesNum: 1,		  // 总页数(默认为1) = Math.ceil(数据总数 / 分页大小)
-				pagerList: [],  
+				pagerList: [],
 				showFirst: false,
 				showLast: false
 			}
@@ -117,7 +117,7 @@
 			this.getPagerList()
 		},
 		watch: { // 监视当前页，随时更新中间的页码
-			currentNum(newVal) {
+			currentNum() {
 				if (this.pagerList.length === 0) {
 					return
 				}
@@ -136,14 +136,15 @@
 				this.choose(this.currentNum)
 			},
 			next() { // 下一页
-				this.currentNum = this.currentNum === this.totalPagesNum ? this.totalPagesNum: this.currentNum + 1
+				this.currentNum =
+					this.currentNum === this.totalPagesNum ? this.totalPagesNum : this.currentNum + 1
 				this.choose(this.currentNum)
 			},
 			getPagerList() {  // 获取中间部分的页码
 				const component = this
 				component.pagerList = []
 				if (component.totalPagesNum <= 10) {
-					for(let i = 1; i <= 10; i++) {
+					for (let i = 1; i <= 10; i++) {
 						component.pagerList.push(i)
 					}
 				} else {
@@ -151,15 +152,15 @@
                     let end = 0
                     if (component.currentNum >= 5) {
                         start = component.currentNum - 2
-                    } 
+                    }
                     if (component.currentNum <= component.totalPagesNum - 3) {
-                        end = (component.currentNum === component.totalPagesNum - 3) 
+                        end = (component.currentNum === component.totalPagesNum - 3)
                             ? start + 5 : start + 4
                     } else {
                         start = component.totalPagesNum - 4
                         end = component.totalPagesNum
                     }
-					for(let i = start; i <= end; i++) {
+					for (let i = start; i <= end; i++) {
 						component.pagerList.push(i)
 					}
 					component.showFirst = start > 2

@@ -84,14 +84,14 @@ export default {
             if (this.showProvinces) {
                 document.body.addEventListener('click', this.tabProviceDisplay)
             } else {
-                document.body.removeEventListener('click', this.tabProviceDisplay)   
+                document.body.removeEventListener('click', this.tabProviceDisplay)
             }
         },
         showCities() {
             if (this.showCities) {
                 document.body.addEventListener('click', this.tabCitiesDisplay)
             } else {
-                document.body.removeEventListener('click', this.tabCitiesDisplay)   
+                document.body.removeEventListener('click', this.tabCitiesDisplay)
             }
         }
     },
@@ -100,15 +100,14 @@ export default {
         // 如果传入默认值得话，显示默认值
         if (this.selected) {
             this.currentProvice = this.selected.province || ''
-            for (const item of area) {
+            area.forEach((item) => {
                 if (item.name === this.currentProvice) {
                     this.cities = item.children
-                    break
                 }
-            }
+            }, this)
             this.currentCity = this.selected.city || ''
             if (this.currentProvice) {
-                this.changed()   
+                this.changed()
             }
         }
     },

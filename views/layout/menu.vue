@@ -66,7 +66,7 @@
             this.list = [
                     {
                         title: '综合首页',
-                        to: '/', 
+                        to: '/',
                         icon: 'fa fa-home'
                     },
                     {
@@ -74,16 +74,16 @@
                         to: '/button',
                         icon: 'fa fa-hand-o-up',
                         children: [
-                            {title: '按钮', to: '/button'},
-                            {title: '标签', to: '/span'}
+                            { title: '按钮', to: '/button' },
+                            { title: '标签', to: '/span' }
                         ]
                     },
                     {
                         title: '文本表单',
                         icon: 'fa fa-align-left',
                         children: [
-                            {title: '表单', to: '/form'},
-                            {title: '下拉框', to: '/select'}
+                            { title: '表单', to: '/form' },
+                            { title: '下拉框', to: '/select' }
                         ]
                     },
                     {
@@ -92,13 +92,13 @@
                         icon: 'fa fa-table'
                     },
                     {
-                        title: '弹框提醒', 
-                        to: '/popup', 
+                        title: '弹框提醒',
+                        to: '/popup',
                         icon: 'fa fa-arrows-alt'
                     },
                     {
-                        title: '加载动画', 
-                        to: '/loading', 
+                        title: '加载动画',
+                        to: '/loading',
                         icon: 'fa fa-hourglass-half'
                     }
             ]
@@ -112,14 +112,13 @@
         },
         methods: {
             briefBind() {
-                let list = document.getElementsByClassName('brief-item')
+                const list = document.getElementsByClassName('brief-item')
                 if (!list || list.length === 0) {
                     return
                 }
                 list.forEach((item) => {
                     item.addEventListener('mouseenter', () => {
-                        console.log('enter')
-                        const target = event.target
+                        console.warn('enter')
                         const childrenBox = event.target.parentNode.querySelector('div')
                         childrenBox.style.display = childrenBox.style.display === 'none' ? 'block' : 'none'
                     }, false)
@@ -131,7 +130,7 @@
                     const childrenBox = event.target.parentNode.querySelector('ul')
                     childrenBox.style.display = childrenBox.style.display === 'none' ? 'block' : 'none'
                 } else {
-                    this.$router.push({path: `${item.to}`})
+                    this.$router.push({ path: `${item.to}` })
                 }
             },
             mouseenter() {

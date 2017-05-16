@@ -8,7 +8,7 @@ import area from './area.vue'
 import upload from './upload.vue'
 
 export default {
-    install(Vue) {
+    install() {
         Vue.component('breadcrumb', breadcrumb)
         Vue.component('pagination', pagination)
         Vue.component('modal', modal)

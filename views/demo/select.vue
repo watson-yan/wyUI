@@ -53,13 +53,13 @@ export default {
     data() {
         return {
             options: [
-                {value: 1, text: '中国工商银行'},
-                {value: 2, text: '中国农业银行'},
-                {value: 3, text: '中国建设银行'},
-                {value: 4, text: '中国交通银行'},
-                {value: 5, text: '招商银行'},
-                {value: 6, text: '平安银行'},
-                {value: 7, text: '农村信用社'}
+                { value: 1, text: '中国工商银行' },
+                { value: 2, text: '中国农业银行' },
+                { value: 3, text: '中国建设银行' },
+                { value: 4, text: '中国交通银行' },
+                { value: 5, text: '招商银行' },
+                { value: 6, text: '平安银行' },
+                { value: 7, text: '农村信用社' }
             ]
         }
     },

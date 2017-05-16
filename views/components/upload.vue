@@ -60,9 +60,9 @@
                     this.uploading = false
                     if (xhr.status === 200 || xhr.status === 304) {
                         this.status = 'finished'
-                        console.log('上传成功')
+                        console.warn('上传成功')
                     } else {
-                        console.log(`上传错误：错误代码${this.status}`)
+                        console.warn(`上传错误：错误代码${this.status}`)
                     }
                 }
             },
@@ -88,7 +88,7 @@
                 }
             },
             // 将图片文件转成BASE64格式
-            html5Reader(file, item){
+            html5Reader(file, item) {
                 const reader = new FileReader()
                 reader.onload = (e) => {
                     this.$set(item, 'src', e.target.result)
@@ -96,12 +96,13 @@
                 reader.readAsDataURL(file)
             },
             isContain(file) {
+                let result
                 this.files.forEach((item) => {
-                    if(item.name === file.name && item.size === file.size) {
-                        return true
+                    if (item.name === file.name && item.size === file.size) {
+                        result = true
                     }
                 })
-                return false
+                return result
             },
             uploadProgress(evt) {
                 const component = this

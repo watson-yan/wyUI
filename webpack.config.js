@@ -1,5 +1,9 @@
-var webpack = require('webpack')
-var path = require('path')
+const webpack = require('webpack')
+const path = require('path')
+
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
 
 module.exports = {
    // 插件项
@@ -9,23 +13,38 @@ module.exports = {
    entry: './entry.js',
 
    // 输出文件配置
-   output: {
+    output: {
        path: path.resolve(__dirname, './dist'),
        filename: 'index.js'
-   },
-
+    },
+    resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': resolve('views')
+        }
+    },
    // 加载器配置
    module: {
        rules: [
-            { 
-                test: /\.css$/, 
+            {
+                test: /\.(js|vue)$/,
+                loader: 'eslint-loader',
+                enforce: 'pre',
+                include: [resolve('views'), resolve('test')],
+                options: {
+                formatter: require('eslint-friendly-formatter')
+                }
+            },
+            {
+                test: /\.css$/,
                 use: [
                     'style-loader',
                     'css-loader',
                     {
-                        loader:'postcss-loader',
+                        loader: 'postcss-loader',
                         options: {
-                            plugins: function() {
+                            plugins() {
                                 return [
                                     require('precss'),
                                     require('autoprefixer')
@@ -35,15 +54,15 @@ module.exports = {
                     }
                 ]
             },
-            { 
+            {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
                     'css-loader',
                     {
-                        loader:'postcss-loader',
+                        loader: 'postcss-loader',
                         options: {
-                            plugins: function() {
+                            plugins() {
                                 return [
                                     require('precss'),
                                     require('autoprefixer')
@@ -54,19 +73,19 @@ module.exports = {
                     'sass-loader'
                 ]
             },
-            { 
+            {
                 test: /\.(png|jpg)$/,
                 loader: 'url-loader?limit=8192'
             },
-            { 
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             },
-            { 
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
-            },
-       ]   
+                loaders: ['babel-loader', 'eslint']
+            }
+       ]
    }
 }

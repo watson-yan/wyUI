@@ -77,18 +77,17 @@ export default {
     mounted() {
         // 如果传入默认选中值的话
         if (this.selected) {
-            for (const option of this.options){
+            this.options.forEach((option) => {
                 if (option.text === this.selected.text || option.value === this.selected.value) {
                     this.selectedText = option.text
                     this.$emit('changed', option)
-                    break
                 }
-            }
+            })
         }
     },
     watch: {
         show() {
-            if(this.show) {
+            if (this.show) {
                 document.body.addEventListener('click', this.tab)
             } else {
                 document.body.removeEventListener('click', this.tab)

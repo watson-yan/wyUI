@@ -56,10 +56,10 @@ export default {
             })
         },
         messageBox() {
-            this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000})
-            this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000})
-            this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000})
-            this.$plugins.Popup.message({text:'设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的4', duration: 10000})
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的1', duration: 1000 })
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的2', duration: 3000 })
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的3', duration: 6000 })
+            this.$plugins.Popup.message({ text: '设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的4', duration: 10000 })
         }
     }
 }

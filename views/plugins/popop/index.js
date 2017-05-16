@@ -42,13 +42,13 @@ const message = (option) => {
         })
     }
     counter++
-    setTimeout(function() {
+    setTimeout(() => {
         messageComponent.queue.forEach((item, index) => {
             if (item.stamp === temp) {
                 messageComponent.queue.splice(index, 1)
             }
         })
-    }, option.duration || 5000);
+    }, option.duration || 5000)
 }
 
 
