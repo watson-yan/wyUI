@@ -61,7 +61,7 @@
 }
 </style>
 <script>
-import area from '../../static/js/area.js'
+import area from '../../static/js/area'
 
 export default {
     props: {

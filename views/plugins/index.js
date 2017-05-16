@@ -1,5 +1,5 @@
-import Popup from './popop/index.js'
-import Loading from './loading/index.js'
+import Popup from './popop/index'
+import Loading from './loading/index'
 
 export default {
     Popup,

@@ -40,7 +40,7 @@
         </article>
     </div>
 </template>
-<style lang="sass" src="./app.scss"></style>
+
 <script>
     import navMenu from './layout/menu.vue'
 
@@ -62,3 +62,5 @@
         }
     }
 </script>
+<style lang="sass" src="./app.scss"></style>
+
